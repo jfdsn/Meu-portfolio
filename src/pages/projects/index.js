@@ -3,7 +3,7 @@ const ProjectsPage = ({ projects }) => {
         <>
             <h1> Projetos</h1>
             {projects.map(e => {
-                return <a href={`/projects/${e.id}`}>{ e.name }</a>
+                return <a key={e.id} href={`/projects/${e.id}`}>{ e.name }</a>
             })}
         </>
     )
