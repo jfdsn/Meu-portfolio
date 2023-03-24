@@ -1,9 +1,18 @@
+import Link from 'next/link';
+
 const ProjectsPage = ({ projects }) => {
     return (
         <>
             <h1> Projetos</h1>
             {projects.map(e => {
-                return <a key={e.id} href={`/projects/${e.id}`}>{ e.name }</a>
+                return (
+                    <section>
+                        <Link key={e.id} href={`/projects/${e.id}`}>
+                            <h3>{ e.name }</h3>
+                        </Link>
+                        <p>{e.short_description}</p>
+                    </section>
+                )
             })}
         </>
     )
