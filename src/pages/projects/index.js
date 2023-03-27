@@ -1,24 +1,12 @@
-import Link from 'next/link';
+import { AllProjectsPage } from '@/components/allProjectsPage';
 
-const ProjectsPage = ({ projects }) => {
+const Projects = ({ projects }) => {
     return (
-        <>
-            <h1> Projetos</h1>
-            {projects.map(p => {
-                return (
-                    <section>
-                        <Link key={p.id} href={`/projects/${p.id}`}>
-                            <h3>{p.name}</h3>
-                        </Link>
-                        <p>{p.short_description}</p>
-                    </section>
-                )
-            })}
-        </>
+        <AllProjectsPage projects={projects} />
     )
 }
 
-export default ProjectsPage;
+export default Projects;
 
 export async function getStaticProps() {
     const data = await import('../../data/data.json');

@@ -1,10 +1,12 @@
-const Page = ({ project }) => {
+import { ProjectPage } from '@/components/projectPage';
+
+const SingleProject = ({ project }) => {
     return (
-      <h1>{project.name}</h1>
+      <ProjectPage project={project} />
     )
 };
 
-export default Page;
+export default SingleProject;
 
 export async function getStaticPaths() {
     const data = await import('../../data/data.json');

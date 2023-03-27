@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import { HomePage } from '@/components/homepage'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({ perfil}) {
+export default function Home({ perfil }) {
   return (
     <>
       <Head>
@@ -15,13 +15,7 @@ export default function Home({ perfil}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1>{perfil.name}</h1>
-        <p>{perfil.about}</p>
-        <p>{perfil.abilities}</p>
-        <a href={perfil.links.github}>GitHub</a>
-        <a href={perfil.links.linkedin}>LinkedIn</a>
-      </main>
+      <HomePage perfil={perfil} />
     </>
   )
 }
