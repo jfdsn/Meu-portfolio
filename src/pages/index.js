@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
@@ -16,13 +15,6 @@ export default function Home({ perfil}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <nav>
-          <Link href="/">Home</Link>
-          <Link href="/projects">Projetos</Link>
-        </nav>
-      </header>
-
       <main className={styles.main}>
         <h1>{perfil.name}</h1>
         <p>{perfil.about}</p>
@@ -30,8 +22,6 @@ export default function Home({ perfil}) {
         <a href={perfil.links.github}>GitHub</a>
         <a href={perfil.links.linkedin}>LinkedIn</a>
       </main>
-
-      <footer> @Copyright 2023</footer>
     </>
   )
 }

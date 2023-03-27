@@ -10,8 +10,8 @@ export async function getStaticPaths() {
     const data = await import('../../data/data.json');
     const projects = data.projects;
 
-    const paths = projects.map(e => ({
-      params: { id: e.id }
+    const paths = projects.map(p => ({
+      params: { id: p.id }
     }));
 
     return {

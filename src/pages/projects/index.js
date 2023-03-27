@@ -4,13 +4,13 @@ const ProjectsPage = ({ projects }) => {
     return (
         <>
             <h1> Projetos</h1>
-            {projects.map(e => {
+            {projects.map(p => {
                 return (
                     <section>
-                        <Link key={e.id} href={`/projects/${e.id}`}>
-                            <h3>{ e.name }</h3>
+                        <Link key={p.id} href={`/projects/${p.id}`}>
+                            <h3>{p.name}</h3>
                         </Link>
-                        <p>{e.short_description}</p>
+                        <p>{p.short_description}</p>
                     </section>
                 )
             })}
