@@ -1,14 +1,21 @@
+@import './globals'
+
+//Layout principal - header,body,main,footer  
+     
+body
+    background: linear-gradient(180deg, $bg-color 85%, $dark-red 100%)
+    background-attachment: fixed
+
 main 
-    background-color: #f2f2f2
     min-height: 500px
+    padding: 2rem 3rem
 
 footer
     display: flex 
     align-items: center
     justify-content: center
-    background-color: #1c4f6e
-    color: #fff
-    min-height: 60px
+    max-height: 60px
+    margin-top: 50px
     padding: 10px
 
 header nav
@@ -17,11 +24,48 @@ header nav
     align-items: flex-end
     padding: 10px
     gap: 20px
-    min-height: 100px
-    background-color: #1c4f6e
+    min-height: 80px
     a 
-        color: #fff
-        font-weight: 700
-        font-size: 24px
+        color: $text-color
+        font-weight: 600
+        font-size: 18px
+        transition: 0.4s ease
     a:hover
-        color: #c8c8c8
+        color: $light-red
+        text-shadow: 0 0 1rem $light-red
+
+//Conteúdo home page
+
+.about-content
+    display: flex
+    flex-direction: column
+    gap: 0.5rem
+    
+    span
+        color: $light-red
+    
+    .social-links
+        display: flex
+        gap: 0.5rem
+        a  
+            display: inline-flex
+            justify-content: center
+            align-items: center
+            width: 2.2rem
+            height: 2.2rem
+            background: transparent 
+            border: .1rem solid $light-red
+            border-radius: 50%
+            font-size: 1.4rem
+            color: $light-red
+            transition: 0.4s ease
+        a:hover
+            box-shadow: 0 0 1rem $light-red
+
+    .email
+        display: flex
+        align-items: center
+        gap:0.3rem
+        i
+          color: $light-red
+        

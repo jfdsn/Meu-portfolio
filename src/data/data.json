@@ -2,10 +2,11 @@
     "perfil" : {
         "name": "Jônathan Faria",
         "about": "Texto temporario aqui!",
-        "abilities": "Dev web",
+        "abilities": "Desenvolvedor Fullstack Jr",
+        "email": "jonathanfdsn@gmail.com",
         "links": {
-            "github" : "linkgit",
-            "linkedin": "linkein"
+            "github" : "https://github.com/jfdsn",
+            "linkedin": "https://www.linkedin.com/in/jfdsn/"
         }
 
     },
