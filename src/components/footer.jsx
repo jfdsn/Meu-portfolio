@@ -1,5 +1,5 @@
 export const Footer = () => {
     return (
-        <footer> @Copyright 2023</footer>
+        <footer> @Copyright 2023 - Feito com Nextjs</footer>
     )
 }

@@ -8,7 +8,7 @@ body
 
 main 
     min-height: 500px
-    padding: 2rem 3rem
+    padding: 2rem 4rem
 
 footer
     display: flex 
@@ -27,45 +27,62 @@ header nav
     min-height: 80px
     a 
         color: $text-color
+        border-bottom: 0.2rem solid transparent
         font-weight: 600
-        font-size: 18px
+        font-size: 1.2rem
         transition: 0.4s ease
-    a:hover
-        color: $light-red
-        text-shadow: 0 0 1rem $light-red
+        &:hover
+            border-bottom: 0.2rem solid $light-red
+            color: $light-red
+            text-shadow: 0 0 1rem $light-red
 
 //Conteúdo home page
 
-.about-content
+.home-container
     display: flex
-    flex-direction: column
-    gap: 0.5rem
-    
-    span
-        color: $light-red
-    
-    .social-links
+    align-items: center
+    .info-content
         display: flex
-        gap: 0.5rem
-        a  
-            display: inline-flex
-            justify-content: center
-            align-items: center
-            width: 2.2rem
-            height: 2.2rem
-            background: transparent 
-            border: .1rem solid $light-red
-            border-radius: 50%
-            font-size: 1.4rem
-            color: $light-red
-            transition: 0.4s ease
-        a:hover
-            box-shadow: 0 0 1rem $light-red
-
-    .email
-        display: flex
+        flex-direction: column
         align-items: center
-        gap:0.3rem
-        i
-          color: $light-red
+        width: 40%
+        gap: 0.5rem
         
+        img
+            border-radius: 50%
+            border: .1rem solid $light-red
+
+        span
+            color: $light-red
+        
+        .social-links
+            display: flex
+            gap: 0.5rem
+            a  
+                display: inline-flex
+                justify-content: center
+                align-items: center
+                width: 2.2rem
+                height: 2.2rem
+                background: transparent 
+                border: .1rem solid $light-red
+                border-radius: 50%
+                font-size: 1.4rem
+                color: $light-red
+                transition: 0.4s ease
+                &:hover
+                    box-shadow: 0 0 1rem $light-red
+
+        .email
+            display: flex
+            align-items: center
+            gap:0.3rem
+            i
+                color: $light-red
+
+    .about-content
+        display: flex
+        width: 60%
+        text-align: justify
+        padding-left: 0.5rem                
+        border-left: 0.1rem solid $light-red

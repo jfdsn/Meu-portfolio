@@ -1,14 +1,21 @@
+import Image from "next/image"
+
 export const HomePage = ({ perfil }) => {
     return (
-        <div className="about-content">
-            <h1>Oi, sou <span>{perfil.name}</span></h1>
-            <h3>{perfil.abilities}</h3>
-            <p>{perfil.about}</p>
-            <div className="social-links">
-                <a href={perfil.links.github} target="_blank"><i className='bx bxl-github'></i></a>
-                <a href={perfil.links.linkedin} target="_blank"><i className='bx bxl-linkedin-square'></i></a>
+        <div className="home-container">
+            <div className="info-content">
+                <Image alt='perfil image' width={220} height={220} src='/placeholder.jpg' />
+                <h1>Oi, sou <span>{perfil.name}</span></h1>
+                <h3>{perfil.abilities}</h3>
+                <div className="social-links">
+                    <a href={perfil.links.github} target="_blank"><i className='bx bxl-github'></i></a>
+                    <a href={perfil.links.linkedin} target="_blank"><i className='bx bxl-linkedin-square'></i></a>
+                </div>
+                <div className="email"><i className='bx bxs-envelope' ></i><p>{perfil.email}</p></div>
             </div>
-            <div className="email"><i class='bx bxs-envelope' ></i><p>{perfil.email}</p></div>
+            <div className="about-content">
+                <p>{perfil.about}</p>
+            </div>
         </div>
     )
 }
