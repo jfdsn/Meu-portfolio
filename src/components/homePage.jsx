@@ -11,7 +11,9 @@ export const HomePage = ({ perfil }) => {
                     <a href={perfil.links.github} target="_blank"><i className='bx bxl-github'></i></a>
                     <a href={perfil.links.linkedin} target="_blank"><i className='bx bxl-linkedin-square'></i></a>
                 </div>
-                <div className="email"><i className='bx bxs-envelope' ></i><p>{perfil.email}</p></div>
+                <a href="mailto:jonathanfdsn@gmail.com" className="email">
+                    <i className='bx bxs-envelope' >{perfil.email}</i>
+                </a>
             </div>
             <div className="about-content">
                 <p>{perfil.about}</p>
