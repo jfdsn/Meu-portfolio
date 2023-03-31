@@ -14,11 +14,13 @@
     "projects" : [
         {
             "id": "1",
-            "name": "namehere",
+            "name": "namehere teste",
             "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
             "full_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "functionality": "bbbbbbbbbbbbbbb",
+            "tecnologies": "JavaScript, Teste1, Teste2, Teste3",
             "links": {
-                "repositorie": "linkgit",
+                "github": "linkgit",
                 "site": "linksite"
             }
         },
@@ -27,8 +29,10 @@
             "name": "namehere2",
             "short_description": "aaaaaaaaaaaaaaaaaaaaaaaaa",
             "full_description": "aaaaaaaaaaaaaaaaaaaaaaa",
+            "functionality": "bbbbbbbbbbbbbbb",
+            "tecnologies": "JavaScript, Teste1, Teste2, Teste3",
             "links": {
-                "repositorie": "linkgit",
+                "github": "linkgit",
                 "site": "linksite"
             }
         },
@@ -37,9 +41,10 @@
             "name": "namehere3",
             "short_description": "aaaaaaaaaaaaaaaaaaaaaaaaa",
             "full_description": "aaaaaaaaaaaaaaaaaaaaaaa",
+            "functionality": "bbbbbbbbbbbbbbb",
+            "tecnologies": "JavaScript, Teste1, Teste2, Teste3",
             "links": {
-                "repositorie": "linkgit",
-                "site": "linksite"
+                "github": "linkgit"
             }
         },
         {
@@ -47,8 +52,10 @@
             "name": "projeto",
             "short_description": "aaaaaaaaaaaaaaaaaaaaaaaaa",
             "full_description": "aaaaaaaaaaaaaaaaaaaaaaa",
+            "functionality": "bbbbbbbbbbbbbbb",
+            "tecnologies": "JavaScript, Teste1, Teste2, Teste3",
             "links": {
-                "repositorie": "linkgit",
+                "github": "linkgit",
                 "site": "linksite"
             }
         }

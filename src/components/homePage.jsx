@@ -8,12 +8,18 @@ export const HomePage = ({ perfil }) => {
                 <h1>Oi, sou <span>{perfil.name}</span></h1>
                 <h3>{perfil.abilities}</h3>
                 <div className="social-links">
-                    <a href={perfil.links.github} target="_blank"><i className='bx bxl-github'></i></a>
-                    <a href={perfil.links.linkedin} target="_blank"><i className='bx bxl-linkedin-square'></i></a>
+                    <a href={perfil.links.github} target="_blank">
+                        <i className='bx bxl-github'></i>
+                    </a>
+                    <a href={perfil.links.linkedin} target="_blank">
+                        <i className='bx bxl-linkedin-square'></i>
+                    </a>
                 </div>
-                <a href="mailto:jonathanfdsn@gmail.com" className="email">
-                    <i className='bx bxs-envelope' >{perfil.email}</i>
-                </a>
+                <div className="email">
+                    <a href="mailto:jonathanfdsn@gmail.com">
+                        <i className='bx bxs-envelope'>{perfil.email}</i>
+                    </a>
+                </div>
             </div>
             <div className="about-content">
                 <p>{perfil.about}</p>
