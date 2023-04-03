@@ -7,7 +7,11 @@ body
     background-attachment: fixed
 
 main 
-    min-height: 500px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    min-height: calc(100vh - 150px)
     padding: 2rem 4rem
 
 footer
@@ -88,6 +92,7 @@ header nav
 //Main content allprojects page
 .title
     padding: 5px 10px
+    align-self: flex-start
 .cards-container
     display: flex
     flex-wrap: wrap
@@ -137,6 +142,7 @@ header nav
 
 .project-container
     margin: 0
+    max-width: 900px
     h2
         text-transform: capitalize
     h4
@@ -180,12 +186,20 @@ header nav
             border-left: none                
             border-top: 0.1rem solid $light-red
     
+    .title
+        margin-left: 4rem
+    
     .project-container
         padding: 10px
 
-@media (max-width: 560px)
+@media (max-width: 600px)
     html,body
         font-size: 14px
+
+@media (min-width: 1400px)
+    html,body
+        font-size: 18px
+    
     
 
     
