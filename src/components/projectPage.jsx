@@ -8,7 +8,9 @@ export const ProjectPage = ({ project }) => {
                 <h2>{project.name}</h2>
                 <div>
                     {links.map(l => (
-                        <a key={l[0]} href={l[1]}><i className='bx bx-link'>{l[0]}</i></a>
+                        <a key={l[0]} target="_blank" href={l[1]}>
+                            <i className='bx bx-link'>{l[0]}</i>
+                        </a>
                     ))}
                 </div>
             </div>
