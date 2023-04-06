@@ -7,11 +7,11 @@
 </p>
 
 ## Descrição
-Meu-Portfólio é uma aplicação front-end feita em Nextjs e tem a função de apresentar de forma simples e direta um pouco sobre a pessoa, os contatos e projetos realizados. 
+"Meu Portfólio" é uma aplicação front-end feita em Nextjs e tem a função de apresentar de forma simples e direta um pouco sobre a pessoa, os contatos e projetos realizados. 
 
-![Imagem Focustation](https://github.com/jfdsn/Meu-portfolio/blob/main/public/Imgs/)
-![Imagem Focustation](https://github.com/jfdsn/Meu-portfolio/blob/main/public/Imgs/)
-![Imagem Focustation](https://github.com/jfdsn/Meu-portfolio/blob/main/public/Imgs/)
+![Imagem Focustation](https://github.com/jfdsn/Meu-portfolio/blob/main/public/Imgs/homepage.png)
+![Imagem Focustation](https://github.com/jfdsn/Meu-portfolio/blob/main/public/Imgs/projectspage.png)
+![Imagem Focustation](https://github.com/jfdsn/Meu-portfolio/blob/main/public/Imgs/singleprojectpage.png)
 
 
 ##  :hammer: Funcionalidades
