@@ -92,10 +92,10 @@ header nav
             color: $light-red
             margin-top: 0.5rem
         ul
-            columns: 2
+            display: grid
+            grid-template-columns: 12rem 12rem
             font-size: 0.9rem
             list-style-type: none
-        li
 
 //Main content allprojects page
 .title
@@ -174,7 +174,7 @@ header nav
 
 //Responsividade
 
-@media (max-width: 1060px)
+@media (max-width: $large)
     main
         min-width: fit-content
         padding: 2rem 0
@@ -200,11 +200,15 @@ header nav
     .project-container
         padding: 10px
 
-@media (max-width: 600px)
+@media (max-width: $small)
     html,body
         font-size: 14px
+    .home-container
+        .about-content
+            ul
+                grid-template-columns: 1fr
 
-@media (min-width: 1400px)
+@media (min-width: $x-large)
     html,body
         font-size: 18px
     

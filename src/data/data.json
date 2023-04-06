@@ -2,7 +2,7 @@
     "perfil" : {
         "name": "Jônathan Faria",
         "about": "Sou graduado em Análise e desenvolvimento de sistemas e tenho conhecimentos na área de desenvolvimento web, tanto front-end como em back-end. Meu objetivo é continuar a aprimorar minhas habilidades e conhecimentos em programação, aprendendo novas tecnologias e técnicas para me tornar um desenvolvedor web qualificado.",
-        "abilities": "Html5, Css3, Sass, JavaScript, TypeScript, Reactjs, Vuejs, Nextjs, Integração de API, Nodejs, Banco de dados relacionais, API restful",
+        "abilities": "Html5, Css3, Sass, JavaScript, TypeScript, Reactjs, Vuejs, Nextjs, Integração de API, Nodejs, Express, Banco de dados relacionais, API restful",
         "job": "Desenvolvedor Fullstack Jr",
         "email": "jonathanfdsn@gmail.com",
         "links": {
@@ -51,7 +51,7 @@
             "id": "4",
             "name": "Back-end Ng",
             "short_description": "API feito em Nodejs, express e typeorm.",
-            "full_description": "Back-end do projeto proposto pelo tech challenge da empresa NG.Cash. É uma api desenvolvida em nodejs/express e que faz comunicação com o BD(postgresql).Realiza cadastro de novos usuários adicionando 100,00 de crédito na nova conta e faz a autenticação de login usando token JWT. Quando devidamente logado, permite transações com outros usuários e a pesquisa das transações enviadas e recebidas.",
+            "full_description": "Back-end do projeto proposto pelo tech challenge da empresa NG.Cash. É uma api desenvolvida em nodejs/express e que faz comunicação com o BD(postgresql). Realiza cadastro de novos usuários adicionando 100,00 de crédito na nova conta e faz a autenticação de login usando token JWT. Quando devidamente logado, permite transações com outros usuários e a pesquisa das transações enviadas e recebidas.",
             "functionality": "A API possui diversas rotas, incluindo uma rota para testar o funcionamento da API e rotas para criar novas contas de usuário e fazer login com autenticação por token JWT. As rotas para visualizar informações de saldo de conta e histórico de transações exigem autenticação, assim como as rotas para realizar transações e filtrar transações por data, envio e recebimento. As rotas para realização de transações exigem informações como o valor da transação e o nome do usuário receptor no corpo da requisição.",
             "tecnologies": "Nodejs, Express, TypeORM, JWT, bcrypt, TypeScript",
             "links": {
