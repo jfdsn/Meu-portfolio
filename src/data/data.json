@@ -2,7 +2,7 @@
     "perfil" : {
         "name": "Jônathan Faria",
         "about": "Sou graduado em Análise e desenvolvimento de sistemas e tenho conhecimentos na área de desenvolvimento web, tanto front-end como em back-end. Meu objetivo é continuar a aprimorar minhas habilidades e conhecimentos em programação, aprendendo novas tecnologias e técnicas para me tornar um desenvolvedor web qualificado.",
-        "abilities": "Html5, Css3, Sass, JavaScript, TypeScript, Reactjs, Vuejs, Nextjs, Integração de API, Nodejs, Express, Banco de dados relacionais, API restful",
+        "abilities": "Html5, Css3, Sass, JavaScript, TypeScript, Reactjs, Vuejs, Nextjs, Integração de API, Nodejs, Express, Banco de dados relacionais, API restful, Jest",
         "job": "Desenvolvedor Fullstack Jr",
         "email": "jonathanfdsn@gmail.com",
         "links": {
@@ -56,6 +56,17 @@
             "tecnologies": "Nodejs, Express, TypeORM, JWT, bcrypt, TypeScript",
             "links": {
                 "github": "https://github.com/jfdsn/backend-ng"
+            }
+        },
+        {
+            "id": "5",
+            "name": "Meu Portfólio",
+            "short_description": "App web feito em Nextjs.",
+            "full_description": "É uma aplicação front-end feita em Nextjs e tem a função de apresentar de forma simples e direta um pouco sobre a pessoa, os contatos e projetos realizados.",
+            "functionality": "A aplicação possuí uma home page com o perfil da pessoa, outra página responsável por apresentar a lista de projetos e uma página detalhada para cada projeto. Baseado em um arquivo Json e usando um dos potenciais do Nextjs, as páginas de cada projeto são criadas de forma dinâmica.",
+            "tecnologies": "Nextjs, Reactjs, Sass",
+            "links": {
+                "github": "https://github.com/jfdsn/Meu-portfolio"
             }
         }
     ]
