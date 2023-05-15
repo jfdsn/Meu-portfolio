@@ -1,6 +1,11 @@
+/*
+    Renderiza o conteúdo da página de cada projeto. Recebe como parâmetro o conteúdo específico de
+    cada projeto. 
+*/
+
 export const ProjectPage = ({ project }) => {
-    const tecnologies = project.tecnologies.split(',');
-    const links = Object.entries(project.links);
+    const tecnologies = project.tecnologies.split(','); //Transforma a string 'tecnologies' em array
+    const links = Object.entries(project.links); //Transforma o object 'links' em array
 
     return (
         <div className="project-container">

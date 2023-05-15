@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+/*
+    Renderiza, baseado no data.json, os cards de todos projetos da página Projects. Recebe como parâmetro
+    o dados filtrados. 
+*/
 export const AllProjectsPage = ({ projects }) => {
     return (
         <>

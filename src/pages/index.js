@@ -1,10 +1,10 @@
-import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import { HomePage } from '@/components/homepage'
 
 
 const inter = Inter({ subsets: ['latin'] })
 
+//Renderiza o componente HomePage
 export default function Home({ perfil }) {
   return (
     <>
@@ -13,6 +13,7 @@ export default function Home({ perfil }) {
   )
 }
 
+//Filtra e returna os dados de perfil do arquivo data.json
 export async function getStaticProps() {
     const data = await import('../data/data.json');
     const perfil = data.perfil;

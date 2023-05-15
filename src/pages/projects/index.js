@@ -1,5 +1,6 @@
 import { AllProjectsPage } from '@/components/allProjectsPage';
 
+//Renderiza o componente AllProjectsPage
 const Projects = ({ projects }) => {
     return (
         <AllProjectsPage projects={projects} />
@@ -8,6 +9,7 @@ const Projects = ({ projects }) => {
 
 export default Projects;
 
+//Filtra e retorna os dados sobre os projetos do arquivo data.json
 export async function getStaticProps() {
     const data = await import('../../data/data.json');
     const projects = data.projects;

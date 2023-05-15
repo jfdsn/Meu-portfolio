@@ -2,6 +2,11 @@ import Head from "next/head"
 import { Footer } from "./footer"
 import { Header } from "./header"
 
+/*
+    Main Layout contendo os componentes em comum de todas páginas da aplicação. Recebe como parâmetro o
+    conteúdo específico da página.
+*/
+
 export const MainLayout = ({children}) => {
     return (
         <>
