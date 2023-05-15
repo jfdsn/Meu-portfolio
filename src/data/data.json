@@ -20,6 +20,7 @@
             "full_description": "Projeto desenvolvido com o intuito de pôr em prática e expor os conhecimentos adquiridos durante formação. Trata-se de uma API Restful utilizando Node.js, express e PostgreSQL.",
             "functionality": "Possuí rotas Get, Post, Put e Delete. Ao todo são 5 rotas responsáveis por retornar toda lista de pokemons, retornar apenas 1 pokemon pelo id, salvar um novo pokemon, modificar um dado salvo e deletar o pokemon pelo id.",
             "tecnologies": "Nodejs, Express, JavaScript, Jest, PostgreSQL, pg-promise",
+            "images": "",
             "links": {
                 "github": "https://github.com/jfdsn/API-Pokedex"
             }
@@ -31,6 +32,7 @@
             "full_description": "O FocuStation é um aplicativo simples desenvolvido com Vue.js, Composition API e CSS3. Seu objetivo é ajudar os usuários a se concentrarem em seus estudos/trabalhos, criando uma estação de trabalho.",
             "functionality": "FocuStation conta com um timer baseado na técnica Pomodoro, uma seção para registrar as tarefas que precisam ser concluídas, o cat generator que gera novas imagens/gifs de gatinhos usando uma API externa e um vídeo do Youtube que ajude no foco (o vídeo pode ser modificado pelo usuário).",
             "tecnologies": "Vue 3, JavaScript, Nodejs, Vite",
+            "images": "https://github.com/jfdsn/Focustation/raw/main/public/Imgs/fullapp.png",
             "links": {
                 "github": "https://github.com/jfdsn/Focustation",
                 "site": "https://focustation.netlify.app/"
@@ -43,6 +45,7 @@
             "full_description": "Front-end do projeto proposto pelo tech challenge da empresa NG.Cash. É uma single page aplication desenvolvida em Reactjs e que faz comunicação com o Back-end também desenvolvido no mesmo desafio.",
             "functionality": "O projeto contém 4 páginas: Home, Login, Signin e User. O usuário pode abrir uma nova conta pela página Signin ou/e logar pela página Login. Quando logado será direcionado para a página User que possui as informações de saldo disponível, histórico de transações e a função de realizar novas transações.",
             "tecnologies": "TypeScript, Reactjs, React Router, React Hooks, Context API, StyledComponents",
+            "images": "",
             "links": {
                 "github": "https://github.com/jfdsn/frontend-ng"
             }
@@ -54,6 +57,7 @@
             "full_description": "Back-end do projeto proposto pelo tech challenge da empresa NG.Cash. É uma api desenvolvida em nodejs/express e que faz comunicação com o BD(postgresql). Realiza cadastro de novos usuários adicionando 100,00 de crédito na nova conta e faz a autenticação de login usando token JWT. Quando devidamente logado, permite transações com outros usuários e a pesquisa das transações enviadas e recebidas.",
             "functionality": "A API possui diversas rotas, incluindo uma rota para testar o funcionamento da API e rotas para criar novas contas de usuário e fazer login com autenticação por token JWT. As rotas para visualizar informações de saldo de conta e histórico de transações exigem autenticação, assim como as rotas para realizar transações e filtrar transações por data, envio e recebimento. As rotas para realização de transações exigem informações como o valor da transação e o nome do usuário receptor no corpo da requisição.",
             "tecnologies": "Nodejs, Express, TypeORM, JWT, bcrypt, TypeScript",
+            "images": "",
             "links": {
                 "github": "https://github.com/jfdsn/backend-ng"
             }
@@ -65,6 +69,7 @@
             "full_description": "É uma aplicação front-end feita em Nextjs e tem a função de apresentar de forma simples e direta um pouco sobre a pessoa, os contatos e projetos realizados.",
             "functionality": "A aplicação possuí uma home page com o perfil da pessoa, outra página responsável por apresentar a lista de projetos e uma página detalhada para cada projeto. Baseado em um arquivo Json e usando um dos potenciais do Nextjs, as páginas de cada projeto são criadas de forma dinâmica.",
             "tecnologies": "Nextjs, Reactjs, Sass",
+            "images": "",
             "links": {
                 "github": "https://github.com/jfdsn/Meu-portfolio"
             }

@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 /*
     Renderiza o conteúdo da página de cada projeto. Recebe como parâmetro o conteúdo específico de
     cada projeto. 
@@ -6,6 +8,7 @@
 export const ProjectPage = ({ project }) => {
     const tecnologies = project.tecnologies.split(','); //Transforma a string 'tecnologies' em array
     const links = Object.entries(project.links); //Transforma o object 'links' em array
+    const imgs = project.images.split(',');
 
     return (
         <div className="project-container">
@@ -27,6 +30,11 @@ export const ProjectPage = ({ project }) => {
             {tecnologies.map(t => (
                 <li key={t}>{t}</li>
             ))}
+            <div className="img-box">
+                {imgs.map(i => (
+                    i ? <img className="project-img" alt="project image" src={i} /> : <></>  
+                ))}
+            </div>
         </div>
     )
 }
