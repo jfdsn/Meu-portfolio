@@ -25,8 +25,10 @@ header
     display: flex
     justify-content: space-between
     align-items: center
+    min-height: 80px
     margin-bottom: 1rem
     padding: 1rem
+    position: relative
     .logo
         margin-left: 1rem
         font-size: 2rem
@@ -36,24 +38,43 @@ header
         &:hover
             color: $light-red
             text-shadow: 0 0 1rem $light-red
-    .header-nav
+    
+    nav 
         display: flex
-        align-items: flex-end
-        margin-right: 1rem
-        padding: 10px
-        gap: 1.2rem
-        min-height: 80px
-        a 
-            color: $text-color
-            border-bottom: 0.2rem solid transparent
-            font-weight: 600
-            font-size: 1.3rem
-            transition: 0.4s ease
-            &:hover
-                border-bottom: 0.2rem solid $light-red
-                color: $light-red
-                text-shadow: 0 0 1rem $light-red
+        align-items: center
+        justify-content: flex-end
+        width: auto
+        position: relative
 
+        .hamburger
+            display: none
+            cursor: pointer
+            padding: 0.5rem
+            z-index: 100
+            .line
+                display: block
+                width: 2rem
+                height: 0.2rem
+                background: $light-red
+                margin: 0.4rem 0
+                transition: 0.4s ease
+        
+        .menu
+            display: flex
+            align-items: center
+            margin-right: 1rem
+            padding: 10px
+            gap: 1.2rem
+            a 
+                color: $text-color
+                border-bottom: 0.2rem solid transparent
+                font-weight: 600
+                font-size: 1.3rem
+                transition: 0.4s ease
+                &:hover
+                    border-bottom: 0.2rem solid $light-red
+                    color: $light-red
+                    text-shadow: 0 0 1rem $light-red
 
 //Main content home page
 .hero-content
@@ -244,14 +265,14 @@ header
     .hero-content
         flex-direction: column
         .info-content
-            width: 90%
+            width: 100%
             img
                 width: 150px
                 height: 150px
         .about-content
-            width: 90%
+            width: 100%
             padding-left: none
-            margin-top: 1rem
+            margin-left: 1rem
             padding-top: 0.5rem
             border-left: none                
             border-top: 0.1rem solid $light-red
@@ -272,7 +293,35 @@ header
             img
                 width: 150px
                 height: 150px
+    header
+        nav
+            width: 100%
+            justify-content: flex-end
+
+            .hamburger
+                display: block
+                margin-right: 1rem
+                z-index: 100
+
+            .menu
+                display: none
+                position: absolute
+                top: 45px
+                right: 0
+                flex-direction: column
+                width: 200px
+                text-align: center
+                background: $dark-red
+                padding: 1rem
+                border: 0.1rem solid $light-red
+                border-radius: 8px
+                z-index: 99
                 
+                &.active
+                    display: flex
+                a
+                    padding: 0.5rem 0
+
 
 @media (max-width: $small)
     html,body
