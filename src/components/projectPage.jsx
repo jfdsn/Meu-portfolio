@@ -32,7 +32,7 @@ export const ProjectPage = ({ project }) => {
             ))}
             <div className="img-box">
                 {imgs.map(i => (
-                    i ? <img className="project-img" alt="project image" src={i} /> : <></>  
+                    i ? <img className="project-img" alt="project image" key={i} src={i} /> : <></>  
                 ))}
             </div>
         </div>

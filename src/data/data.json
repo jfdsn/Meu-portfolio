@@ -45,7 +45,7 @@
             "full_description": "Front-end do projeto proposto pelo tech challenge da empresa NG.Cash. É uma single page aplication desenvolvida em Reactjs e que faz comunicação com o Back-end também desenvolvido no mesmo desafio.",
             "functionality": "O projeto contém 4 páginas: Home, Login, Signin e User. O usuário pode abrir uma nova conta pela página Signin ou/e logar pela página Login. Quando logado será direcionado para a página User que possui as informações de saldo disponível, histórico de transações e a função de realizar novas transações.",
             "tecnologies": "TypeScript, Reactjs, React Router, React Hooks, Context API, StyledComponents",
-            "images": "",
+            "images": "https://github.com/jfdsn/frontend-ng/raw/main/public/Imgs/home-page.png",
             "links": {
                 "github": "https://github.com/jfdsn/frontend-ng"
             }
@@ -69,7 +69,7 @@
             "full_description": "É uma aplicação front-end feita em Nextjs e tem a função de apresentar de forma simples e direta um pouco sobre a pessoa, os contatos e projetos realizados.",
             "functionality": "A aplicação possuí uma home page com o perfil da pessoa, outra página responsável por apresentar a lista de projetos e uma página detalhada para cada projeto. Baseado em um arquivo Json e usando um dos potenciais do Nextjs, as páginas de cada projeto são criadas de forma dinâmica.",
             "tecnologies": "Nextjs, Reactjs, Sass",
-            "images": "",
+            "images": "https://github.com/jfdsn/Meu-portfolio/raw/main/public/Imgs/homepage.png",
             "links": {
                 "github": "https://github.com/jfdsn/Meu-portfolio"
             }
