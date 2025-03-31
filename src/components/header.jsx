@@ -8,8 +8,8 @@ export const Header = () => {
                 </h1>
                 <nav className="header-nav">
                     <Link href="/">Home</Link>
-                    <Link href="#about">Sobre</Link>
-                    <Link href="#skills">Habilidades</Link>
+                    <Link href="/#about">Sobre</Link>
+                    <Link href="/#skills">Habilidades</Link>
                     <Link href="/projects">Projetos</Link>
                 </nav>
         </header>
