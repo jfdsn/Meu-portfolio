@@ -1,8 +1,5 @@
-import { Inter } from 'next/font/google'
 import { HomePage } from '@/components/homepage'
 
-
-const inter = Inter({ subsets: ['latin'] })
 
 //Renderiza o componente HomePage
 export default function Home({ perfil }) {

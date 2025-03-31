@@ -21,33 +21,53 @@ footer
     margin-top: 50px
     padding: 10px
 
-header nav
+header
     display: flex
-    justify-content: center
-    align-items: flex-end
-    padding: 10px
-    gap: 1.2rem
-    min-height: 80px
-    a 
-        color: $text-color
-        border-bottom: 0.2rem solid transparent
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 1rem
+    padding: 1rem
+    .logo
+        margin-left: 1rem
+        font-size: 2rem
         font-weight: 600
-        font-size: 1.3rem
+        color: $text-color
         transition: 0.4s ease
         &:hover
-            border-bottom: 0.2rem solid $light-red
             color: $light-red
             text-shadow: 0 0 1rem $light-red
+    .header-nav
+        display: flex
+        align-items: flex-end
+        margin-right: 1rem
+        padding: 10px
+        gap: 1.2rem
+        min-height: 80px
+        a 
+            color: $text-color
+            border-bottom: 0.2rem solid transparent
+            font-weight: 600
+            font-size: 1.3rem
+            transition: 0.4s ease
+            &:hover
+                border-bottom: 0.2rem solid $light-red
+                color: $light-red
+                text-shadow: 0 0 1rem $light-red
+
 
 //Main content home page
-.home-container
+.hero-content
+    min-height: 90vh
     display: flex
     align-items: center
+    justify-content: center
+    width: 100%
+    gap: 0.5rem
     .info-content
         display: flex
         flex-direction: column
         align-items: center
-        width: 40%
+        width: 100%
         gap: 0.5rem
         img
             border-radius: 50%
@@ -80,20 +100,55 @@ header nav
                 vertical-align: middle
                 margin-right: 0.2rem
                 color: $light-red
+        .about-content
+            width: 60%
+            text-align: justify
+            padding-left: 0.8rem                
+            border-left: 0.1rem solid $light-red
+            font-size: 1.4rem
 
-    .about-content
-        width: 60%
-        text-align: justify
-        padding-left: 0.8rem                
-        border-left: 0.1rem solid $light-red
-        h4
-            color: $light-red
-            margin-top: 0.5rem
-        ul
-            display: grid
-            grid-template-columns: 12rem 12rem
-            font-size: 0.9rem
+
+.skills-content
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding: 2rem 0
+    h4
+        color: $light-red
+        font-size: 1.5rem
+        margin-bottom: 2rem
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            bottom: -0.5rem
+            left: 50%
+            transform: translateX(-50%)
+            width: 50%
+            height: 2px
+            background: $light-red
+    ul
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 1.5rem
+        width: 80%
+        max-width: 1200px
+        li
+            background: rgba($dark-red, 0.8)
+            border: 1px solid $light-red
+            border-radius: 8px
+            padding: 1rem 2rem
+            font-size: 1rem
             list-style-type: none
+            transition: all 0.3s ease
+            &:hover
+                transform: translateY(-5px)
+                box-shadow: 0 0 1rem $light-red
+                background: $dark-red
+
 
 //Main content allprojects page
 .title
@@ -186,7 +241,7 @@ header nav
         min-width: fit-content
         padding: 2rem 0
     
-    .home-container
+    .hero-content
         flex-direction: column
         .info-content
             width: 90%
@@ -207,10 +262,22 @@ header nav
     .project-container
         padding: 10px
 
+@media (max-width: $medium)
+    .skills-content
+        ul
+            width: 90%
+    .hero-content
+        .info-content
+            width: 90%
+            img
+                width: 150px
+                height: 150px
+                
+
 @media (max-width: $small)
     html,body
         font-size: 14px
-    .home-container
+    .hero-content
         .about-content
             ul
                 grid-template-columns: 1fr
