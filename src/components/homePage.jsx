@@ -24,6 +24,12 @@ export const HomePage = ({ perfil }) => {
                             <i className='bx bxs-envelope'>{perfil.email}</i>
                         </a>
                     </div>
+                    <div className="download-cv">
+                        <a href="/CV-Jonathan.pdf" download>
+                            <i className='bx bxs-download'></i>
+                            Download CV
+                        </a>
+                    </div>
                 </div>
                 <div className="about-content">
                     {perfil.about}
