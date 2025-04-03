@@ -81,6 +81,36 @@ header
                     color: $light-red
                     text-shadow: 0 0 1rem $light-red
 
+.scroll-to-top
+    position: fixed
+    bottom: 2rem
+    right: 2rem
+    background-color: $dark-red
+    color: $text-color
+    width: 3rem
+    height: 3rem
+    border-radius: 50%
+    border: 2px solid $light-red
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    z-index: 999
+    opacity: 0.8
+    transition: all 0.3s ease
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3)
+    display: none // Hide by default on all screens
+    
+    i
+        font-size: 1.5rem
+    
+    &:hover
+        opacity: 1
+        background-color: $light-red
+        transform: translateY(-5px)
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5)
+
+
 //Main content home page
 .hero-content
     min-height: 90vh
@@ -309,6 +339,8 @@ header
             color: $light-red
             text-shadow: 0 0 1rem $light-red
 
+
+
 //Responsividade
 @media (max-width: $large)
     main
@@ -342,15 +374,20 @@ header
         padding: 1rem
 
 @media (max-width: $medium)
+    .scroll-to-top
+        display: flex
+    
     .skills-content
         ul
             width: 90%
+    
     .hero-content
         .info-content
             width: 90%
             img
                 width: 150px
                 height: 150px
+    
     header
         nav
             width: 100%

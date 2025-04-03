@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { Footer } from "./footer"
 import { Header } from "./header"
+import { useState, useEffect } from "react"
 
 /*
     Main Layout contendo os componentes em comum de todas páginas da aplicação. Recebe como parâmetro o
@@ -8,6 +9,32 @@ import { Header } from "./header"
 */
 
 export const MainLayout = ({children}) => {
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 200) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        
+        // Clean up
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <>
             <Head>
@@ -21,6 +48,15 @@ export const MainLayout = ({children}) => {
                 {children}
             </main>
             <Footer />
+            {showButton && (
+                <button 
+                    className="scroll-to-top"
+                    onClick={scrollToTop}
+                    aria-label="Voltar ao topo"
+                >
+                    <i className='bx bx-up-arrow-alt'></i>
+                </button>
+            )}
         </>
     )
 }
