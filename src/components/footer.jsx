@@ -1,5 +1,7 @@
 export const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
-        <footer> @Copyright 2023 - Feito com Nextjs</footer>
+        <footer> @Copyright {currentYear} - Feito com Nextjs</footer>
     )
 }
