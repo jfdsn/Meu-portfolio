@@ -5,13 +5,26 @@ import Link from "next/link";
     o dados filtrados. 
 */
 export const AllProjectsPage = ({ projects }) => {
+
+    const getBackgroundImage = (type) => {
+        if (type === 'frontend') {
+            return '/background-front.png';
+        } else if (type === 'backend') {
+            return '/background-back.png';
+        }
+    };
+    
     return (
         <>
             <h2 className="title">Projetos</h2>
             <div className="cards-container">
                 {projects.map(p => {
                     return (
-                        <div className="card" key={p.id}>
+                        <div className="card" key={p.id} style={{
+                            backgroundImage: `linear-gradient(rgba(68, 3, 3, 0.55), rgba(68, 3, 3, 0.65)), url(${getBackgroundImage(p.type)})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center'
+                        }}>
                                 <h3>{p.name}</h3>
                             <Link href={`/projects/${p.id}`}>
                                 <div className="card-layer">

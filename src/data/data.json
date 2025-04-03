@@ -15,6 +15,7 @@
     "projects" : [
         {
             "id": "1",
+            "type": "backend",
             "name": "API Pokedex",
             "short_description": "API Rest feito em Nodejs/express.",
             "full_description": "Projeto desenvolvido com o intuito de pôr em prática e expor os conhecimentos adquiridos durante formação. Trata-se de uma API Restful utilizando Node.js, express e PostgreSQL.",
@@ -27,6 +28,7 @@
         },
         {
             "id": "2",
+            "type": "frontend",
             "name": "FocuStation",
             "short_description": "Aplicação Front-end feito em VueJs.",
             "full_description": "O FocuStation é um aplicativo simples desenvolvido com Vue.js, Composition API e CSS3. Seu objetivo é ajudar os usuários a se concentrarem em seus estudos/trabalhos, criando uma estação de trabalho.",
@@ -40,6 +42,7 @@
         },
         {
             "id": "3",
+            "type": "frontend",
             "name": "Front-end Ng",
             "short_description": "Aplicação Front-end feito em Reactjs.",
             "full_description": "Front-end do projeto proposto pelo tech challenge da empresa NG.Cash. É uma single page aplication desenvolvida em Reactjs e que faz comunicação com o Back-end também desenvolvido no mesmo desafio.",
@@ -52,6 +55,7 @@
         },
         {
             "id": "4",
+            "type": "backend",
             "name": "Back-end Ng",
             "short_description": "API feito em Nodejs, express e typeorm.",
             "full_description": "Back-end do projeto proposto pelo tech challenge da empresa NG.Cash. É uma api desenvolvida em nodejs/express e que faz comunicação com o BD(postgresql). Realiza cadastro de novos usuários adicionando 100,00 de crédito na nova conta e faz a autenticação de login usando token JWT. Quando devidamente logado, permite transações com outros usuários e a pesquisa das transações enviadas e recebidas.",
@@ -64,6 +68,7 @@
         },
         {
             "id": "5",
+            "type": "frontend",
             "name": "Meu Portfólio",
             "short_description": "App web feito em Nextjs.",
             "full_description": "É uma aplicação front-end feita em Nextjs e tem a função de apresentar de forma simples e direta um pouco sobre a pessoa, os contatos e projetos realizados.",
