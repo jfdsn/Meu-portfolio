@@ -78,6 +78,19 @@
             "links": {
                 "github": "https://github.com/jfdsn/Meu-portfolio"
             }
+        },
+        {
+            "id": "6",
+            "type": "fullstack",
+            "name": "TESTE",
+            "short_description": "App web feito em Nextjs.",
+            "full_description": "É uma aplicação front-end feita em Nextjs e tem a função de apresentar de forma simples e direta um pouco sobre a pessoa, os contatos e projetos realizados.",
+            "functionality": "A aplicação possuí uma home page com o perfil da pessoa, outra página responsável por apresentar a lista de projetos e uma página detalhada para cada projeto. Baseado em um arquivo Json e usando um dos potenciais do Nextjs, as páginas de cada projeto são criadas de forma dinâmica.",
+            "tecnologies": "Nextjs, Reactjs, Sass",
+            "images": "https://github.com/jfdsn/Meu-portfolio/raw/main/public/Imgs/homepage.png",
+            "links": {
+                "github": "https://github.com/jfdsn/Meu-portfolio"
+            }
         }
     ]
 }
