@@ -1,4 +1,4 @@
-import { ProjectPage } from '@/components/projectPage';
+import { ProjectPage } from '@/components/ProjectPage';
 
 /*
   Renderiza o componente ProjectPage.

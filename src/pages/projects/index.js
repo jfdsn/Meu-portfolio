@@ -1,4 +1,4 @@
-import { AllProjectsPage } from '@/components/allProjectsPage';
+import { AllProjectsPage } from '@/components/AllProjectsPage';
 
 //Renderiza o componente AllProjectsPage
 const Projects = ({ projects }) => {

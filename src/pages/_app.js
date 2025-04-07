@@ -1,5 +1,5 @@
 import '@/styles/style.sass'
-import { MainLayout } from '../components/mainLayout'
+import { MainLayout } from '@/components/MainLayout'
 
 export default function App({ Component, pageProps }) {
   return (
