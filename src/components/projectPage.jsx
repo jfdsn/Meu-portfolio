@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 /*
     Renderiza o conteúdo da página de cada projeto. Recebe como parâmetro o conteúdo específico de
@@ -11,7 +12,7 @@ export const ProjectPage = ({ project }) => {
     const imgs = project.images.split(',');
 
     return (
-        <div className="project-container">
+        <div className="project-container">         
             <div className="title-box">
                 <h2>{project.name}</h2>
                 <div className="project-links">
@@ -61,6 +62,12 @@ export const ProjectPage = ({ project }) => {
                     </div>
                 </section>
             )}
+                        
+            <div className="back-button-container">
+                <Link href="/projects" className="back-button">
+                    <i className='bx bx-arrow-back'></i> Voltar
+                </Link>
+            </div>
         </div>
     )
 }
