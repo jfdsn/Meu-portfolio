@@ -1,4 +1,4 @@
-import { HomePage } from '@/components/homepage'
+import { HomePage } from '@/components/homePage'
 
 
 //Renderiza o componente HomePage
