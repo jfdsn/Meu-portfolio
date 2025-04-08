@@ -1,9 +1,9 @@
-import { AllProjectsPage } from '@/components/AllProjectsPage';
+import { ProjectListPage } from '@/components/ProjectListPage';
 
 //Renderiza o componente AllProjectsPage
 const Projects = ({ projects }) => {
     return (
-        <AllProjectsPage projects={projects} />
+        <ProjectListPage projects={projects} />
     )
 }
 

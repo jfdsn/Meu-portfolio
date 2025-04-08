@@ -1,18 +1,19 @@
 import Link from "next/link";
 
 /*
-    Renderiza, baseado no data.json, os cards de todos projetos da página Projects. Recebe como parâmetro
-    o dados filtrados. 
+    Renderiza, baseado no data.json, os cards de todos projetos da página Projects. Recebe como parâmetro os dados filtrados. 
 */
-export const AllProjectsPage = ({ projects }) => {
+export const ProjectListPage = ({ projects }) => {
 
     const getBackgroundImage = (type) => {
         if (type === 'frontend') {
             return '/background-front.png';
         } else if (type === 'backend') {
             return '/background-back.png';
+        } else if (type === 'fullstack') {
+            return '/background-fullstack.png'
         } else {
-            return '/background-fullstack.png'; // Default fallback
+            return '/'; // Default fallback
         }
     };
 
@@ -20,8 +21,7 @@ export const AllProjectsPage = ({ projects }) => {
         if (!technologies) return [];
         
         // Get first 3 technologies
-        return technologies.split(',')
-            .map(tech => tech.trim())
+        return technologies.map(tech => tech.trim())
             .filter((_, index) => index < 3);
     };
     
@@ -30,7 +30,7 @@ export const AllProjectsPage = ({ projects }) => {
             <h2 className="title">Projetos</h2>
             <div className="cards-container">
                 {projects.map(p => {
-                    const mainTechs = getMainTechnology(p.tecnologies);
+                    const mainTechs = getMainTechnology(p.technologies);
                     
                     return (
                         <div className="card" key={p.id} style={{
@@ -46,7 +46,9 @@ export const AllProjectsPage = ({ projects }) => {
                                     {mainTechs.length > 0 && (
                                         <div className="tech-tags">
                                             {mainTechs.map(tech => (
-                                                <span key={tech} className="tech-tag">{tech}</span>
+                                                <span key={tech} className="tech-tag">
+                                                    {tech}
+                                                </span>
                                             ))}
                                         </div>
                                     )}
