@@ -2,10 +2,10 @@ import { HomePage } from '@/components/HomePage'
 
 
 //Renderiza o componente HomePage
-export default function Home({ perfil }) {
+export default function Home({ profile }) {
   return (
     <>
-      <HomePage perfil={perfil} />
+      <HomePage profile={profile} />
     </>
   )
 }
@@ -13,9 +13,9 @@ export default function Home({ perfil }) {
 //Filtra e retorna os dados de perfil do arquivo data.json
 export async function getStaticProps() {
     const data = await import('../data/data.json');
-    const perfil = data.perfil;
+    const profile = data.profile;
     
     return {
-      props: { perfil }
+      props: { profile }
     }
 }

@@ -132,7 +132,7 @@ header
             color: $light-red
         .social-links
             display: flex
-            gap: 0.5rem
+            gap: 0.8rem
             a  
                 display: inline-flex
                 justify-content: center
@@ -167,7 +167,6 @@ header
                 color: $text-color
     .about-content
         width: 100%
-        text-align: justify
         margin-right: 2rem
         padding-left: 0.8rem                
         border-left: 0.1rem solid $light-red
@@ -181,9 +180,9 @@ header
     justify-content: center
     width: 100%
     padding: 2rem 0
-    h4
+    h3
         color: $light-red
-        font-size: 1.5rem
+        font-size: 1.4rem
         margin-bottom: 2rem
         position: relative
         &:after
@@ -195,6 +194,17 @@ header
             width: 50%
             height: 2px
             background: $light-red
+    .category-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        margin-bottom: 1.5rem
+    h2
+        calor: $text-color
+        font-size: 1.2rem
+        text-transform: capitalize
+        margin-bottom: 1rem
     ul
         display: flex
         flex-wrap: wrap
@@ -206,7 +216,7 @@ header
             background: rgba($dark-red, 0.8)
             border: 1px solid $light-red
             border-radius: 8px
-            padding: 1rem 2rem
+            padding: 0.5rem 1rem
             font-size: 1rem
             list-style-type: none
             transition: all 0.3s ease

@@ -1,96 +1,154 @@
-{ 
-    "perfil" : {
-        "name": "Jônathan Faria",
-        "about": "Sou graduado em Análise e desenvolvimento de sistemas e tenho conhecimentos na área de desenvolvimento web, tanto front-end como em back-end. Meu objetivo é continuar a aprimorar minhas habilidades e conhecimentos em programação, aprendendo novas tecnologias e técnicas para me tornar um desenvolvedor web qualificado.",
-        "abilities": "Html5, Css3, Sass, JavaScript, TypeScript, Reactjs, Vuejs, Nextjs, Integração de API, Nodejs, Express, Banco de dados relacionais, API restful, Jest",
-        "job": "Desenvolvedor Fullstack Jr",
+{
+    "profile": {
+      "name": "Jônathan Faria",
+      "title": "Desenvolvedor Fullstack Jr",
+      "about": "Sou graduado em Análise e Desenvolvimento de Sistemas com foco em desenvolvimento web. Possuo experiência prática com tecnologias front-end e back-end, buscando constantemente aprimorar minhas habilidades através de projetos pessoais e estudos contínuos. Sou apaixonado por criar soluções que resolvam problemas reais e estou sempre ansioso para aprender novas tecnologias e metodologias.",
+      "contact": {
         "email": "jonathanfdsn@gmail.com",
         "links": {
-            "github" : "https://github.com/jfdsn",
-            "linkedin": "https://www.linkedin.com/in/jfdsn/"
+          "github": "https://github.com/jfdsn",
+          "linkedin": "https://www.linkedin.com/in/jfdsn/"
         }
-
+      },
+      "skills": {
+        "frontend": ["HTML5", "CSS3", "Sass", "JavaScript", "TypeScript", "React.js", "Vue.js", "Next.js", "Styled Components"],
+        "backend": ["Node.js", "Express", "PostgreSQL", "MySQL", "TypeORM", "JWT", "bcrypt"],
+        "testing": ["Jest", "React Testing Library"],
+        "devops": ["Docker", "Git", "GitHub", "CI/CD"],
+        "outros": ["API RESTful", "Integração de APIs", "Windows", "Linux"]
+      },
+      "learning": {
+        "current": ["GraphQL", "MongoDB", "AWS"],
+        "interests": ["Desenvolvimento Mobile", "Inteligência Artificial"]
+      },
+      "certifications": [
+        {
+          "id": "Conteudo futuro",
+          "name": "Desenvolvimento Web Full Stack",
+          "issuer": "Plataforma de Curso",
+          "date": "2023",
+          "url": "https://exemplo.com/certificado"
+        }
+      ]
     },
 
-    "projects" : [
-        {
-            "id": "1",
-            "type": "backend",
-            "name": "API Pokedex",
-            "short_description": "API Rest feito em Nodejs/express.",
-            "full_description": "Projeto desenvolvido com o intuito de pôr em prática e expor os conhecimentos adquiridos durante formação. Trata-se de uma API Restful utilizando Node.js, express e PostgreSQL.",
-            "functionality": "Possuí rotas Get, Post, Put e Delete. Ao todo são 5 rotas responsáveis por retornar toda lista de pokemons, retornar apenas 1 pokemon pelo id, salvar um novo pokemon, modificar um dado salvo e deletar o pokemon pelo id.",
-            "tecnologies": "Nodejs, Express, JavaScript, Jest, PostgreSQL, pg-promise",
-            "images": "",
-            "links": {
-                "github": "https://github.com/jfdsn/API-Pokedex"
-            }
-        },
-        {
-            "id": "2",
-            "type": "frontend",
-            "name": "FocuStation",
-            "short_description": "Aplicação Front-end feito em VueJs.",
-            "full_description": "O FocuStation é um aplicativo simples desenvolvido com Vue.js, Composition API e CSS3. Seu objetivo é ajudar os usuários a se concentrarem em seus estudos/trabalhos, criando uma estação de trabalho.",
-            "functionality": "FocuStation conta com um timer baseado na técnica Pomodoro, uma seção para registrar as tarefas que precisam ser concluídas, o cat generator que gera novas imagens/gifs de gatinhos usando uma API externa e um vídeo do Youtube que ajude no foco (o vídeo pode ser modificado pelo usuário).",
-            "tecnologies": "Vue 3, JavaScript, Nodejs, Vite",
-            "images": "https://github.com/jfdsn/Focustation/raw/main/public/Imgs/fullapp.png",
-            "links": {
-                "github": "https://github.com/jfdsn/Focustation",
-                "site": "https://focustation.netlify.app/"
-            }
-        },
-        {
-            "id": "3",
-            "type": "frontend",
-            "name": "Front-end Ng",
-            "short_description": "Aplicação Front-end feito em Reactjs.",
-            "full_description": "Front-end do projeto proposto pelo tech challenge da empresa NG.Cash. É uma single page aplication desenvolvida em Reactjs e que faz comunicação com o Back-end também desenvolvido no mesmo desafio.",
-            "functionality": "O projeto contém 4 páginas: Home, Login, Signin e User. O usuário pode abrir uma nova conta pela página Signin ou/e logar pela página Login. Quando logado será direcionado para a página User que possui as informações de saldo disponível, histórico de transações e a função de realizar novas transações.",
-            "tecnologies": "TypeScript, Reactjs, React Router, React Hooks, Context API, StyledComponents",
-            "images": "https://github.com/jfdsn/frontend-ng/raw/main/public/Imgs/home-page.png",
-            "links": {
-                "github": "https://github.com/jfdsn/frontend-ng"
-            }
-        },
-        {
-            "id": "4",
-            "type": "backend",
-            "name": "Back-end Ng",
-            "short_description": "API feito em Nodejs, express e typeorm.",
-            "full_description": "Back-end do projeto proposto pelo tech challenge da empresa NG.Cash. É uma api desenvolvida em nodejs/express e que faz comunicação com o BD(postgresql). Realiza cadastro de novos usuários adicionando 100,00 de crédito na nova conta e faz a autenticação de login usando token JWT. Quando devidamente logado, permite transações com outros usuários e a pesquisa das transações enviadas e recebidas.",
-            "functionality": "A API possui diversas rotas, incluindo uma rota para testar o funcionamento da API e rotas para criar novas contas de usuário e fazer login com autenticação por token JWT. As rotas para visualizar informações de saldo de conta e histórico de transações exigem autenticação, assim como as rotas para realizar transações e filtrar transações por data, envio e recebimento. As rotas para realização de transações exigem informações como o valor da transação e o nome do usuário receptor no corpo da requisição.",
-            "tecnologies": "Nodejs, Express, TypeORM, JWT, bcrypt, TypeScript",
-            "images": "",
-            "links": {
-                "github": "https://github.com/jfdsn/backend-ng"
-            }
-        },
-        {
-            "id": "5",
-            "type": "frontend",
-            "name": "Meu Portfólio",
-            "short_description": "App web feito em Nextjs.",
-            "full_description": "É uma aplicação front-end feita em Nextjs e tem a função de apresentar de forma simples e direta um pouco sobre a pessoa, os contatos e projetos realizados.",
-            "functionality": "A aplicação possuí uma home page com o perfil da pessoa, outra página responsável por apresentar a lista de projetos e uma página detalhada para cada projeto. Baseado em um arquivo Json e usando um dos potenciais do Nextjs, as páginas de cada projeto são criadas de forma dinâmica.",
-            "tecnologies": "Nextjs, Reactjs, Sass",
-            "images": "https://github.com/jfdsn/Meu-portfolio/raw/main/public/Imgs/homepage.png",
-            "links": {
-                "github": "https://github.com/jfdsn/Meu-portfolio"
-            }
-        },
-        {
-            "id": "6",
-            "type": "fullstack",
-            "name": "TESTE",
-            "short_description": "App web feito em Nextjs.",
-            "full_description": "É uma aplicação front-end feita em Nextjs e tem a função de apresentar de forma simples e direta um pouco sobre a pessoa, os contatos e projetos realizados.",
-            "functionality": "A aplicação possuí uma home page com o perfil da pessoa, outra página responsável por apresentar a lista de projetos e uma página detalhada para cada projeto. Baseado em um arquivo Json e usando um dos potenciais do Nextjs, as páginas de cada projeto são criadas de forma dinâmica.",
-            "tecnologies": "Nextjs, Reactjs, Sass",
-            "images": "https://github.com/jfdsn/Meu-portfolio/raw/main/public/Imgs/homepage.png",
-            "links": {
-                "github": "https://github.com/jfdsn/Meu-portfolio"
-            }
+    "projects": [
+      {
+        "id": "1",
+        "type": "backend",
+        "name": "API Pokedex",
+        "short_description": "API RESTful para gerenciamento de dados de Pokémon",
+        "full_description": "Projeto desenvolvido para aplicar conhecimentos em desenvolvimento backend. Trata-se de uma API RESTful utilizando Node.js, Express e PostgreSQL, seguindo boas práticas de desenvolvimento e padrões de projeto.",
+        "functionality": "A API possui rotas CRUD completas (GET, POST, PUT, DELETE) para gerenciar dados de Pokémon. Implementei validação de dados, tratamento de erros e documentação clara das rotas. O sistema permite consultar a lista completa de Pokémon, buscar por ID específico, adicionar novos Pokémon, atualizar informações existentes e remover registros.",
+        "challenges": "Um dos principais desafios foi implementar a validação de dados e garantir a integridade do banco de dados. Aprendei a utilizar transações para operações complexas e a estruturar o código seguindo o padrão MVC para melhor manutenibilidade.",
+        "technologies": ["Node.js", "Express", "JavaScript", "Jest", "PostgreSQL", "pg-promise"],
+        "images": [
+          {
+            "url": "https://github.com/jfdsn/API-Pokedex/raw/main/docs/api-screenshot.png",
+            "alt": "Screenshot da documentação da API"
+          },
+          {
+            "url": "https://github.com/jfdsn/API-Pokedex/raw/main/docs/database-schema.png",
+            "alt": "Esquema do banco de dados"
+          }
+        ],
+        "links": {
+          "github": "https://github.com/jfdsn/API-Pokedex"
         }
+      },
+      {
+        "id": "2",
+        "type": "frontend",
+        "name": "FocuStation",
+        "short_description": "Aplicativo de produtividade com timer Pomodoro e gerenciamento de tarefas",
+        "full_description": "O FocuStation é um aplicativo web desenvolvido com Vue.js 3 e Composition API, projetado para ajudar usuários a manter o foco durante sessões de trabalho ou estudo. O projeto foi criado para aplicar conceitos avançados de Vue.js e explorar a integração com APIs externas.",
+        "functionality": "O aplicativo oferece um timer Pomodoro personalizável, um gerenciador de tarefas com persistência local, um gerador de imagens de gatos para pausas relaxantes e um player de vídeo do YouTube para ambientes sonoros. Implementei recursos como notificações do navegador, temas claro/escuro e estatísticas de produtividade.",
+        "challenges": "Um dos maiores desafios foi implementar a persistência de dados usando localStorage e garantir que o estado da aplicação permanecesse consistente entre recarregamentos da página. Também foi desafiador integrar a API de gatos e o player do YouTube de forma eficiente.",
+        "technologies": ["Vue 3", "JavaScript", "Composition API", "CSS3", "Vite", "LocalStorage API"],
+        "images": [
+          {
+            "url": "https://github.com/jfdsn/Focustation/raw/main/public/Imgs/fullapp.png",
+            "alt": "Interface principal do FocuStation"
+          },
+          {
+            "url": "https://github.com/jfdsn/Focustation/raw/main/public/Imgs/tasks.png",
+            "alt": "Gerenciador de tarefas"
+          }
+        ],
+        "links": {
+          "github": "https://github.com/jfdsn/Focustation",
+          "site": "https://focustation.netlify.app/"
+        }
+      },
+      {
+        "id": "3",
+        "type": "frontend",
+        "name": "Front-end NG.Cash",
+        "short_description": "Interface para sistema de transferências financeiras",
+        "full_description": "Front-end desenvolvido para o desafio técnico da NG.Cash, uma aplicação de transferências financeiras entre usuários. O projeto foi construído utilizando React com TypeScript, implementando um sistema de autenticação e gerenciamento de transações financeiras.",
+        "functionality": "A aplicação possui fluxo completo de autenticação (registro e login), dashboard do usuário com saldo atual, histórico de transações e funcionalidade para realizar novas transferências. Implementei validação de formulários, feedback visual para ações do usuário e tratamento de erros da API.",
+        "challenges": "O maior desafio foi implementar o gerenciamento de estado global usando Context API e garantir que o estado de autenticação fosse mantido consistente em toda a aplicação. Também foi importante criar uma interface intuitiva para o processo de transferência de dinheiro.",
+        "technologies": ["TypeScript", "React.js", "React Router", "React Hooks", "Context API", "Styled Components"],
+        "images": [
+          {
+            "url": "https://github.com/jfdsn/frontend-ng/raw/main/public/Imgs/home-page.png",
+            "alt": "Página inicial da aplicação"
+          },
+          {
+            "url": "https://github.com/jfdsn/frontend-ng/raw/main/public/Imgs/dashboard.png",
+            "alt": "Dashboard do usuário"
+          }
+        ],
+        "links": {
+          "github": "https://github.com/jfdsn/frontend-ng"
+        }
+      },
+      {
+        "id": "4",
+        "type": "backend",
+        "name": "Back-end NG.Cash",
+        "short_description": "API para sistema de transferências financeiras",
+        "full_description": "Back-end desenvolvido para o desafio técnico da NG.Cash, uma API para gerenciamento de contas e transferências financeiras entre usuários. O projeto foi construído utilizando Node.js com Express e TypeORM para interação com banco de dados PostgreSQL.",
+        "functionality": "A API oferece funcionalidades completas de gerenciamento de usuários e transações financeiras. Implementei autenticação JWT, criptografia de senhas, validação de dados, e regras de negócio para transferências. O sistema inclui rotas para registro, login, consulta de saldo, histórico de transações e realização de transferências.",
+        "challenges": "Um dos principais desafios foi implementar a lógica de transações financeiras de forma segura, garantindo a atomicidade das operações e evitando condições de corrida. Também foi importante estruturar o código de forma modular e testável, utilizando princípios SOLID.",
+        "technologies": ["Node.js", "Express", "TypeORM", "JWT", "bcrypt", "TypeScript", "PostgreSQL"],
+        "images": [
+          {
+            "url": "https://github.com/jfdsn/backend-ng/raw/main/docs/api-docs.png",
+            "alt": "Documentação da API"
+          },
+          {
+            "url": "https://github.com/jfdsn/backend-ng/raw/main/docs/database.png",
+            "alt": "Estrutura do banco de dados"
+          }
+        ],
+        "links": {
+          "github": "https://github.com/jfdsn/backend-ng"
+        }
+      },
+      {
+        "id": "5",
+        "type": "fullstack",
+        "name": "Portfolio Pessoal",
+        "short_description": "Site de portfólio desenvolvido com Next.js",
+        "full_description": "Portfolio pessoal desenvolvido com Next.js para apresentar minha trajetória profissional, habilidades e projetos. O site foi projetado para ser responsivo, acessível e com boa performance, seguindo as melhores práticas de desenvolvimento web moderno.",
+        "functionality": "O site possui uma página inicial com informações sobre meu perfil, uma página de projetos com cards interativos e páginas detalhadas para cada projeto. Implementei geração estática de páginas para melhor performance, animações suaves para melhor experiência do usuário e um design responsivo que funciona bem em todos os dispositivos.",
+        "challenges": "Um dos desafios foi estruturar os dados dos projetos de forma flexível e escalável, permitindo fácil adição de novos projetos. Também foi importante garantir que o site tivesse boa performance e acessibilidade, seguindo as diretrizes WCAG.",
+        "technologies": ["Next.js", "React.js", "Sass", "JavaScript", "CSS Grid", "CSS Flexbox"],
+        "images": [
+          {
+            "url": "https://github.com/jfdsn/Meu-portfolio/raw/main/public/Imgs/homepage.png",
+            "alt": "Página inicial do portfólio"
+          },
+          {
+            "url": "https://github.com/jfdsn/Meu-portfolio/raw/main/public/Imgs/projects.png",
+            "alt": "Página de projetos"
+          }
+        ],
+        "links": {
+          "github": "https://github.com/jfdsn/Meu-portfolio",
+          "site": "https://jonathanfaria.dev"
+        }
+      }
     ]
 }
