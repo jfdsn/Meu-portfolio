@@ -86,28 +86,41 @@
         flex-direction: column
         align-items: center
         justify-content: center
+        width: 80%
+        padding: 1rem
         margin-bottom: 1.5rem
     h2
         calor: $text-color
         font-size: 1.2rem
         text-transform: capitalize
         margin-bottom: 1rem
-    ul
+    
+    .skills-container
         display: flex
-        flex-wrap: wrap
         justify-content: center
-        gap: 1.5rem
-        width: 80%
-        max-width: 1200px
-        li
-            background: rgba($dark-red, 0.8)
-            border: 1px solid $light-red
-            border-radius: 8px
-            padding: 0.5rem 1rem
+        align-items: center
+        width: 100%
+        flex-wrap: wrap
+        gap: 0.5rem
+
+    .skill-card
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 0.5rem
+        min-width: 120px
+        background: $bg-color-secondary
+        border: 1px solid $light-red
+        border-radius: 8px
+        padding: 0.5rem
+        list-style-type: none
+        transition: all 0.3s ease
+        &:hover
+            transform: translateY(-5px)
+            box-shadow: 0 0 1rem $light-red
+        span
             font-size: 1rem
-            list-style-type: none
-            transition: all 0.3s ease
-            &:hover
-                transform: translateY(-5px)
-                box-shadow: 0 0 1rem $light-red
-                background: $dark-red
+            color: $bg-color
+        i
+            font-size: 1.5rem

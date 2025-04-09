@@ -11,10 +11,10 @@
         }
       },
       "skills": {
-        "frontend": ["HTML5", "CSS3", "Sass", "JavaScript", "TypeScript", "React.js", "Vue.js", "Next.js", "Styled Components"],
-        "backend": ["Node.js", "Express", "PostgreSQL", "MySQL", "TypeORM", "JWT", "bcrypt"],
+        "frontend": ["HTML5", "CSS3", "Sass", "JavaScript", "TypeScript", "React", "Vue", "Next", "Styled Components"],
+        "backend": ["Node", "Express", "PostgreSQL", "MySQL", "TypeORM", "JWT", "bcrypt"],
         "testing": ["Jest", "React Testing Library"],
-        "devops": ["Docker", "Git", "GitHub", "CI/CD"],
+        "devops": ["Docker", "Git", "Github", "CI/CD"],
         "outros": ["API RESTful", "Integração de APIs", "Windows", "Linux"]
       },
       "learning": {

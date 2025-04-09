@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { DevIcon } from "./DevIcon"
 
 
 
@@ -42,11 +43,14 @@ export const HomePage = ({ profile }) => {
                 {Object.entries(profile.skills).map(([category, skills]) => (
                     <div key={category} className="category-content">
                         <h2>{category}:</h2>
-                        <ul>
+                        <div className="skills-container">
                             {skills.map(skill => (
-                                <li key={skill}>{skill}</li>
+                                <div className="skill-card" key={skill}>
+                                    <DevIcon skill={skill} />
+                                    <span>{skill}</span>
+                                </div>
                             ))}
-                        </ul>
+                        </div>
                     </div>
                 ))}
             </section>
