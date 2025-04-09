@@ -23,7 +23,7 @@
         .about-content
             width: 90%
             font-size: 1.2rem
-            padding-left: none
+            padding-left: 0
             margin-left: 1rem
             padding-top: 0.5rem
             border-left: none                
@@ -46,21 +46,22 @@
                 width: 100%
 
 @media (max-width: $medium)
+    h1
+        font-size: 1.6rem
+    h2
+        font-size: 1.4rem
+    h3 
+        font-size: 1.2rem
+    
     .scroll-to-top
         display: flex
     
-    .skills-content
-        ul
-            width: 90%
-    
     .hero-content
         .info-content
-            width: 90%
             img
                 width: 150px
                 height: 150px
     
-
     header
         nav
             width: 100%
@@ -147,15 +148,8 @@
                     font-size: 0.8rem
 
 @media (max-width: $small)
-    html,body
-        font-size: 14px
-    .hero-content
-        .about-content
-            ul
-                grid-template-columns: 1fr
-                
     main
-        padding: 6rem 1rem
+        padding: 6rem 0.5rem
         
     .title
         margin-left: 1rem
@@ -165,7 +159,7 @@
         width: 100%
         
         .card
-            height: 220px
+            height: 140px
 
     .project-container
         padding: 0.8rem
