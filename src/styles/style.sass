@@ -436,6 +436,44 @@ header
                 box-shadow: 0 0 1rem $light-red
                 background: $dark-red
 
+//Carousel 
+.embla__carousel
+    display: flex
+    flex-direction: column
+    align-items: center
+.embla
+    overflow: hidden
+    width: 100%
+    max-width: 500px
+    margin: 0 auto
+    border-radius: 1rem
+
+.embla__container
+    display: flex
+    scroll-snap-type: x mandatory
+
+.embla__slide
+    flex: 0 0 100%
+    scroll-snap-align: start
+    padding: 0.5rem
+
+.embla__image
+    width: 100%
+    height: auto
+    border-radius: 8px
+    object-fit: cover
+    border: 1px solid $light-red
+
+.embla__button
+    background: none
+    border: none
+    color: $text-color
+    font-size: 1.6rem
+    padding: 0.5rem 0.5rem
+    cursor: pointer
+    transition: 0.3s ease
+    &:hover
+        color:$light-red
 
 
 //Responsividade

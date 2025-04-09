@@ -42,16 +42,7 @@
         "functionality": "A API possui rotas CRUD completas (GET, POST, PUT, DELETE) para gerenciar dados de Pokémon. Implementei validação de dados, tratamento de erros e documentação clara das rotas. O sistema permite consultar a lista completa de Pokémon, buscar por ID específico, adicionar novos Pokémon, atualizar informações existentes e remover registros.",
         "challenges": "Um dos principais desafios foi implementar a validação de dados e garantir a integridade do banco de dados. Aprendei a utilizar transações para operações complexas e a estruturar o código seguindo o padrão MVC para melhor manutenibilidade.",
         "technologies": ["Node.js", "Express", "JavaScript", "Jest", "PostgreSQL", "pg-promise"],
-        "images": [
-          {
-            "url": "https://github.com/jfdsn/API-Pokedex/raw/main/docs/api-screenshot.png",
-            "alt": "Screenshot da documentação da API"
-          },
-          {
-            "url": "https://github.com/jfdsn/API-Pokedex/raw/main/docs/database-schema.png",
-            "alt": "Esquema do banco de dados"
-          }
-        ],
+        "images": [],
         "links": {
           "github": "https://github.com/jfdsn/API-Pokedex"
         }
@@ -112,16 +103,7 @@
         "functionality": "A API oferece funcionalidades completas de gerenciamento de usuários e transações financeiras. Implementei autenticação JWT, criptografia de senhas, validação de dados, e regras de negócio para transferências. O sistema inclui rotas para registro, login, consulta de saldo, histórico de transações e realização de transferências.",
         "challenges": "Um dos principais desafios foi implementar a lógica de transações financeiras de forma segura, garantindo a atomicidade das operações e evitando condições de corrida. Também foi importante estruturar o código de forma modular e testável, utilizando princípios SOLID.",
         "technologies": ["Node.js", "Express", "TypeORM", "JWT", "bcrypt", "TypeScript", "PostgreSQL"],
-        "images": [
-          {
-            "url": "https://github.com/jfdsn/backend-ng/raw/main/docs/api-docs.png",
-            "alt": "Documentação da API"
-          },
-          {
-            "url": "https://github.com/jfdsn/backend-ng/raw/main/docs/database.png",
-            "alt": "Estrutura do banco de dados"
-          }
-        ],
+        "images": [],
         "links": {
           "github": "https://github.com/jfdsn/backend-ng"
         }
@@ -141,8 +123,12 @@
             "alt": "Página inicial do portfólio"
           },
           {
-            "url": "https://github.com/jfdsn/Meu-portfolio/raw/main/public/Imgs/projects.png",
+            "url": "https://github.com/jfdsn/Meu-portfolio/raw/main/public/Imgs/projectspage.png",
             "alt": "Página de projetos"
+          },
+          {
+            "url": "https://github.com/jfdsn/Meu-portfolio/raw/main/public/Imgs/singleprojectpage.png",
+            "alt": "Página detalhes do projeto" 
           }
         ],
         "links": {

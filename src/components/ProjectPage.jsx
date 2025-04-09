@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { ImageCarousel } from "./ImageCarousel";
 
 /*
     Renderiza o conteúdo da página de cada projeto. Recebe como parâmetro o conteúdo específico de
@@ -7,9 +8,8 @@ import Link from "next/link"
 */
 
 export const ProjectPage = ({ project }) => {
-    const tecnologies = project.tecnologies.split(',').map(tech => tech.trim()); //Transforma a string 'tecnologies' em array e remove espaços
-    const links = Object.entries(project.links); //Transforma o object 'links' em array
-    const imgs = project.images.split(',');
+    const links = Object.entries(project.links);
+    const imgs = Object.entries(project.images);
 
     return (
         <div className="project-container">         
@@ -33,11 +33,16 @@ export const ProjectPage = ({ project }) => {
                 <h4>Funcionalidades</h4>
                 <p>{project.functionality}</p>
             </section>
+
+            <section className="project-section">
+                <h4>Desafios</h4>
+                <p>{project.challenges}</p>
+            </section>
             
             <section className="project-section">
                 <h4>Tecnologias</h4>
                 <div className="tech-container">
-                    {tecnologies.map(tech => (
+                    {project.technologies.map(tech => (
                         <div key={tech} className="tech-item">
                             {tech}
                         </div>
@@ -48,18 +53,7 @@ export const ProjectPage = ({ project }) => {
             {imgs.some(img => img) && (
                 <section className="project-section">
                     <h4>Screenshots</h4>
-                    <div className="img-box">
-                        {imgs.map(img => (
-                            img ? <Image 
-                                className="project-img" 
-                                alt="project image" 
-                                key={img} 
-                                src={img} 
-                                width={400}
-                                height={400}
-                            /> : <></>  
-                        ))}
-                    </div>
+                    <ImageCarousel images={project.images}/>
                 </section>
             )}
                         
