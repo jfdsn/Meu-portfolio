@@ -1,0 +1,113 @@
+//Main content home page
+.hero-content
+    min-height: 90vh
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    gap: 0.5rem
+    .info-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 60%
+        gap: 0.5rem
+        img
+            border-radius: 50%
+            border: .1rem solid $light-red
+        span
+            color: $light-red
+        .social-links
+            display: flex
+            gap: 0.8rem
+            a  
+                display: inline-flex
+                justify-content: center
+                align-items: center
+                width: 2.2rem
+                height: 2.2rem
+                background: transparent 
+                border: .1rem solid $light-red
+                border-radius: 50%
+                font-size: 1.4rem
+                color: $light-red
+                transition: 0.4s ease
+                &:hover
+                    box-shadow: 0 0 1rem $light-red
+        .email
+            a:hover 
+                color: $light-red
+                text-shadow: 0 0 0.2rem $light-red
+            i:before
+                font-size: 1rem
+                vertical-align: middle
+                margin-right: 0.2rem
+                color: $light-red
+        .download-cv
+            a:hover 
+                color: $light-red
+                text-shadow: 0 0 0.2rem $light-red
+            i:before
+                font-size: 1rem
+                vertical-align: middle
+                margin-right: 0.2rem
+                color: $text-color
+    .about-content
+        width: 100%
+        margin-right: 2rem
+        padding-left: 0.8rem                
+        border-left: 0.1rem solid $light-red
+        font-size: 1.4rem
+
+
+.skills-content
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding: 2rem 0
+    h3
+        color: $light-red
+        font-size: 1.4rem
+        margin-bottom: 2rem
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            bottom: -0.5rem
+            left: 50%
+            transform: translateX(-50%)
+            width: 50%
+            height: 2px
+            background: $light-red
+    .category-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        margin-bottom: 1.5rem
+    h2
+        calor: $text-color
+        font-size: 1.2rem
+        text-transform: capitalize
+        margin-bottom: 1rem
+    ul
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        gap: 1.5rem
+        width: 80%
+        max-width: 1200px
+        li
+            background: rgba($dark-red, 0.8)
+            border: 1px solid $light-red
+            border-radius: 8px
+            padding: 0.5rem 1rem
+            font-size: 1rem
+            list-style-type: none
+            transition: all 0.3s ease
+            &:hover
+                transform: translateY(-5px)
+                box-shadow: 0 0 1rem $light-red
+                background: $dark-red
