@@ -40,7 +40,7 @@ export const HomePage = ({ profile }) => {
             <section id="about" className="about-section">
                 <h3>Sobre</h3>
                 <div className="container">
-                    <div className="about-content">
+                    <div className="about-content" data-aos="fade-up">
                         {profile.about}
                     </div>
                 </div>

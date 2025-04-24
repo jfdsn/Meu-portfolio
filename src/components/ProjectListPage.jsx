@@ -31,9 +31,11 @@ export const ProjectListPage = ({ projects }) => {
             <div className="cards-container">
                 {projects.map(p => {
                     const mainTechs = getMainTechnology(p.technologies);
+                    let animationDelay = 200;
+                    const delaySum = 50;
                     
                     return (
-                        <div className="card" key={p.id} style={{
+                        <div className="card" data-aos="fade-left" data-aos-delay={animationDelay + delaySum * p.id} key={p.id} style={{
                             backgroundImage: `linear-gradient(rgba(68, 3, 3, 0.65), rgba(29, 24, 24, 0.7), transparent), url(${getBackgroundImage(p.type)})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center'
