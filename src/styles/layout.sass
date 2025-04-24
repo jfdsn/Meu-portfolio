@@ -1,6 +1,13 @@
 //Layout principal - header,body,main,footer      
-body
+body::before
+    content: ''
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
     background: linear-gradient(180deg, $bg-color 85%, $dark-red 100%)
+    z-index: -1
 
 main 
     display: flex
