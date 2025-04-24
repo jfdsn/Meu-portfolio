@@ -1,16 +1,15 @@
-//Main content home page
-.hero-content
-    min-height: 90vh
-    display: flex
-    align-items: center
-    justify-content: center
+/*Hero section*/
+.hero-section
+    min-height: 100vh
     width: 100%
-    gap: 0.5rem
-    .info-content
+    .hero-content
         display: flex
         flex-direction: column
+        justify-content: center
         align-items: center
-        width: 60%
+        margin-top: 2rem
+        height: 100%
+        width: 100%
         gap: 0.5rem
         img
             border-radius: 50%
@@ -53,21 +52,50 @@
                 vertical-align: middle
                 margin-right: 0.2rem
                 color: $text-color
-    .about-content
-        width: 100%
-        margin-right: 0rem
-        padding-left: 0.8rem                
-        border-left: 0.1rem solid $light-red
+
+/*About section*/
+.about-section
+    display: flex
+    flex-direction: column
+    align-items: center
+    min-height: 100vh
+    width: 100%
+    h3
+        color: $light-red
         font-size: 1.4rem
+        margin-bottom: 2rem
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            bottom: -0.5rem
+            left: 50%
+            transform: translateX(-50%)
+            width: 50%
+            height: 2px
+            background: $light-red
+    .container
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        .about-content
+            max-width: 800px
+            margin-top: 2rem             
+            font-size: 1.5rem
 
 
+
+/*Habilidades section*/
 .skills-content
+    min-height: 100vh
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     width: 100%
-    padding: 2rem 0
+    margin-top: 2rem
+    padding: 1rem
     h3
         color: $light-red
         font-size: 1.4rem

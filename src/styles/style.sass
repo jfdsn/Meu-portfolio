@@ -8,27 +8,7 @@
 
                     
 //Responsividade
-@media (max-width: $large)
-    main
-        min-width: fit-content
-        padding: 8rem 0
-    
-    .hero-content
-        flex-direction: column
-        .info-content
-            width: 100%
-            img
-                width: 150px
-                height: 150px
-        .about-content
-            width: 90%
-            font-size: 1.2rem
-            padding-left: 0
-            margin-left: 1rem
-            padding-top: 0.5rem
-            border-left: none                
-            border-top: 0.1rem solid $light-red
-    
+@media (max-width: $large)    
     .title
         margin-left: 4rem
     
@@ -57,12 +37,15 @@
         display: flex
     
     .hero-content
-        .info-content
-            img
-                width: 150px
-                height: 150px
-        .about-content
-            font-size: 1.1rem
+        img
+            width: 200px
+            height: 220px
+        
+    .about-section
+        .container
+            .about-content
+                font-size: 1.3rem
+    
     header
         nav
             width: 100%
@@ -154,9 +137,14 @@
         
     .title
         margin-left: 1rem
+
+    .about-section
+        .container
+            .about-content
+                font-size: 1.1rem
         
     .cards-container
-        grid-gap: 1.5rem
+        gap: 1.5rem
         width: 100%
         
         .card
