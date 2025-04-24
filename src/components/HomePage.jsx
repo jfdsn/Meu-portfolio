@@ -9,7 +9,7 @@ export const HomePage = ({ profile }) => {
         <>
             <section id="about" className="hero-content">
                 <div className="info-content">
-                    <Image alt='perfil image' width={220} height={220} src='/placeholder.jpg' />
+                    <Image alt='perfil image' width={240} height={268} src='/foto-perfil.webp' />
                     <h1>Oi, sou <span>{profile.name}</span></h1>
                     <h3>{profile.title}</h3>
                     <div className="social-links">
