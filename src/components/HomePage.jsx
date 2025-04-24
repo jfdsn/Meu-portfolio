@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { DevIcon } from "./DevIcon"
+import { ActionBtn } from "./ActionBtn"
 
 
 
@@ -34,6 +35,7 @@ export const HomePage = ({ profile }) => {
                             </a>
                         </div>
                     </div>
+                    <ActionBtn link={"/#about"} />
             </section>
             <section id="about" className="about-section">
                 <h3>Sobre</h3>
@@ -42,6 +44,7 @@ export const HomePage = ({ profile }) => {
                         {profile.about}
                     </div>
                 </div>
+                <ActionBtn link={"/#skills"} />
             </section>
             <section id="skills" className="skills-content">
                 <h3>Habilidades</h3>
