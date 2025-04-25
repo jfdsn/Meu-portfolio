@@ -35,16 +35,25 @@
     "projects": [
       {
         "id": "1",
-        "type": "backend",
-        "name": "API Pokedex",
-        "short_description": "API RESTful para gerenciamento de dados de Pokémon",
-        "full_description": "Projeto desenvolvido para aplicar conhecimentos em desenvolvimento backend. Trata-se de uma API RESTful utilizando Node.js, Express e PostgreSQL, seguindo boas práticas de desenvolvimento e padrões de projeto.",
-        "functionality": "A API possui rotas CRUD completas (GET, POST, PUT, DELETE) para gerenciar dados de Pokémon. Implementei validação de dados, tratamento de erros e documentação clara das rotas. O sistema permite consultar a lista completa de Pokémon, buscar por ID específico, adicionar novos Pokémon, atualizar informações existentes e remover registros.",
-        "challenges": "Um dos principais desafios foi implementar a validação de dados e garantir a integridade do banco de dados. Aprendei a utilizar transações para operações complexas e a estruturar o código seguindo o padrão MVC para melhor manutenibilidade.",
-        "technologies": ["Node.js", "Express", "JavaScript", "Jest", "PostgreSQL", "pg-promise"],
-        "images": [],
+        "type": "fullstack",
+        "name": "Fastaxi",
+        "short_description": "Aplicativo de simulação de corridas estilo táxi, com backend em Node.js e frontend em React.",
+        "full_description": "Projeto fullstack desenvolvido como solução para um teste técnico, simulando um aplicativo de corridas estilo táxi. O backend consiste em uma API RESTful desenvolvida com Node.js, Express, TypeScript e SqLite, enquanto o frontend é uma SPA criada com React e TypeScript. A aplicação contempla funcionalidades de estimativa de viagem, confirmação e histórico de corridas, com comunicação direta entre frontend e backend.",
+        "functionality": "No frontend, implementei uma interface responsiva que permite ao usuário calcular a rota via API do Google Maps, solicitar uma corrida, escolher um dos motoristas disponíveis baseados em suas informações detalhadas, confirmar a viagem e consultar o histórico de deslocamentos. No backend, construí três endpoints principais: estimativa de corrida, confirmação e listagem de histórico, integrando com a API do Google Maps para cálculo de rotas e respeitando todas as regras de validação exigidas no teste prático.",
+        "challenges": "O maior desafio foi garantir a integridade e robustez das regras de negócio, especialmente as validações envolvendo a escolha de motoristas e a verificação da rota. A integração com a API do Google Maps exigiu atenção ao tratamento de erros e estruturação de respostas. Além disso, me preocupei em manter a aplicação modular e escalável, utilizando o padrão MVC no backend e boas práticas de organização no frontend.",
+        "technologies": ["React", "TypeScript", "Node.js", "Express", "SqLite", "Sequelize", "Docker"],
+        "images": [
+          {
+            "url": "https://github.com/jfdsn/fastaxi/blob/main/public/home-page.png?raw=true",
+            "alt": "Página inicial do Fastaxi"
+          },
+          {
+            "url": "https://github.com/jfdsn/fastaxi/blob/main/public/history-page.png?raw=true",
+            "alt": "Página de histórico de corridas"
+          }
+        ],
         "links": {
-          "github": "https://github.com/jfdsn/API-Pokedex"
+          "github": "https://github.com/jfdsn/fastaxi"
         }
       },
       {
@@ -62,8 +71,8 @@
             "alt": "Interface principal do FocuStation"
           },
           {
-            "url": "https://github.com/jfdsn/Focustation/raw/main/public/Imgs/tasks.png",
-            "alt": "Gerenciador de tarefas"
+            "url": "https://github.com/jfdsn/Focustation/raw/main/public/Imgs/focustime.png",
+            "alt": "FocuStation working timer ativo"
           }
         ],
         "links": {
@@ -74,7 +83,7 @@
       {
         "id": "3",
         "type": "frontend",
-        "name": "Front-end NG.Cash",
+        "name": "NG.Cash Site",
         "short_description": "Interface para sistema de transferências financeiras",
         "full_description": "Front-end desenvolvido para o desafio técnico da NG.Cash, uma aplicação de transferências financeiras entre usuários. O projeto foi construído utilizando React com TypeScript, implementando um sistema de autenticação e gerenciamento de transações financeiras.",
         "functionality": "A aplicação possui fluxo completo de autenticação (registro e login), dashboard do usuário com saldo atual, histórico de transações e funcionalidade para realizar novas transferências. Implementei validação de formulários, feedback visual para ações do usuário e tratamento de erros da API.",
@@ -86,7 +95,15 @@
             "alt": "Página inicial da aplicação"
           },
           {
-            "url": "https://github.com/jfdsn/frontend-ng/raw/main/public/Imgs/dashboard.png",
+            "url": "https://github.com/jfdsn/frontend-ng/raw/main/public/Imgs/cadastro-page.png",
+            "alt": "Cadastro do usuário"
+          },
+          {
+            "url": "https://github.com/jfdsn/frontend-ng/raw/main/public/Imgs/login-page.png",
+            "alt": "Login do usuário"
+          },
+          {
+            "url": "https://github.com/jfdsn/frontend-ng/raw/main/public/Imgs/user-page.png",
             "alt": "Dashboard do usuário"
           }
         ],
@@ -97,7 +114,7 @@
       {
         "id": "4",
         "type": "backend",
-        "name": "Back-end NG.Cash",
+        "name": "NG.Cash API",
         "short_description": "API para sistema de transferências financeiras",
         "full_description": "Back-end desenvolvido para o desafio técnico da NG.Cash, uma API para gerenciamento de contas e transferências financeiras entre usuários. O projeto foi construído utilizando Node.js com Express e TypeORM para interação com banco de dados PostgreSQL.",
         "functionality": "A API oferece funcionalidades completas de gerenciamento de usuários e transações financeiras. Implementei autenticação JWT, criptografia de senhas, validação de dados, e regras de negócio para transferências. O sistema inclui rotas para registro, login, consulta de saldo, histórico de transações e realização de transferências.",
@@ -110,7 +127,7 @@
       },
       {
         "id": "5",
-        "type": "fullstack",
+        "type": "frontend",
         "name": "Portfolio Pessoal",
         "short_description": "Site de portfólio desenvolvido com Next.js",
         "full_description": "Portfolio pessoal desenvolvido com Next.js para apresentar minha trajetória profissional, habilidades e projetos. O site foi projetado para ser responsivo, acessível e com boa performance, seguindo as melhores práticas de desenvolvimento web moderno.",
@@ -133,7 +150,34 @@
         ],
         "links": {
           "github": "https://github.com/jfdsn/Meu-portfolio",
-          "site": "https://jonathanfaria.dev"
+          "site": "https://meu-portfolio-pied-six.vercel.app/"
+        }
+      },
+      {
+        "id": "6",
+        "type": "frontend",
+        "name": "Vocabys",
+        "short_description": "Um aplicativo moderno de vocabulário para aprendizado de idiomas com integração com IA generativa.",
+        "full_description": "Vocabys é uma aplicação web interativa desenvolvida com SvelteKit e TypeScript, voltada para o aprendizado de vocabulário em diferentes idiomas. A interface é responsiva, limpa e pensada para oferecer uma experiência prática e envolvente tanto em desktop quanto em mobile.",
+        "functionality": "O usuário seleciona o idioma alvo, define a quantidade de palavras e escolhe uma categoria (ou aleatória). Ao clicar em 'Gerar Palavras', a aplicação consulta uma IA generativa (Cohere) para retornar uma lista de vocabulário no formato JSON. Cada palavra vem com suporte a tradução e a pronúncia, permitindo uma prática mais completa.",
+        "challenges": "Um dos desafios foi estruturar os dados dos projetos de forma flexível e escalável, permitindo fácil adição de novas línguas. Também foi importante garantir que o site tivesse boa performance e acessibilidade.",
+        "technologies": ["SvelteKit", "TypeScript", "JavaScript", "Tailwind CSS", "Cohere API", "Vite"],
+        "images": [
+          {
+            "url": "https://github.com/jfdsn/vocabys/raw/main/static/vocabys1.jpg",
+            "alt": "Página inicial do vocabys"
+          },
+          {
+            "url": "https://github.com/jfdsn/vocabys/raw/main/static/vocabys2.jpg",
+            "alt": "Página escolha da linguagem"
+          },
+          {
+            "url": "https://github.com/jfdsn/vocabys/raw/main/static/vocabys3.jpg",
+            "alt": "Página gerador de vocabulario" 
+          }
+        ],
+        "links": {
+          "github": "https://github.com/jfdsn/vocabys"
         }
       }
     ]

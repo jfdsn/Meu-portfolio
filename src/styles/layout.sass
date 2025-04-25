@@ -6,7 +6,7 @@ body::before
     left: 0
     width: 100vw
     height: 100vh
-    background: linear-gradient(180deg, $bg-color 85%, $dark-red 100%)
+    background: linear-gradient(180deg, $bg-color 0%, mix($bg-color, $dark-red, 70%) 60%, mix($bg-color, $dark-red, 50%) 80%, $dark-red 100%)
     z-index: -1
 
 main 
@@ -14,7 +14,7 @@ main
     flex-direction: column
     justify-content: center
     align-items: center
-    min-height: calc(100vh - 150px)
+    min-height: calc(100vh - 100px)
 
 footer
     display: flex 
@@ -43,6 +43,7 @@ header
         font-weight: 600
         color: $text-color
         transition: 0.4s ease
+
         &:hover
             color: $light-red
             text-shadow: 0 0 1rem $light-red
@@ -58,6 +59,7 @@ header
             display: none
             cursor: pointer
             padding: 0.5rem
+            -webkit-tap-highlight-color: transparent
             z-index: 100
             .line
                 display: block
