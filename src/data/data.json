@@ -179,6 +179,26 @@
         "links": {
           "github": "https://github.com/jfdsn/vocabys"
         }
+      },
+      {
+        "id": "7",
+        "type": "frontend",
+        "name": "Eden Eternal Tools",
+        "short_description": "Site de ferramentas para o jogo Eden Eternal desenvolvido em React.",
+        "full_description": "Eden Eternal Tools é um site desenvolvido em para fornecer ferramentas úteis aos jogadores do MMORPG Eden Eternal. O site oferece funcionalidades como simulador de árvore talentos e combinações de certificados.",
+        "functionality": "O site inclui um simulador de árvore de talentos que permite aos jogadores planejar suas builds, além de uma página para verificar combinações de certificados e visualizar os efeitos resultantes. A interface é intuitiva e responsiva, facilitando o uso em diferentes dispositivos.",
+        "challenges": "Um dos desafios foi organizar as regras de negócio do sistema de talentos do jogo e replicar em um componente React. Aprendi o conceito de State Lifting para gerenciar o estado entre componentes relacionados. Também foi importante garantir que o site tivesse boa performance e fosse fácil de navegar.",
+        "technologies": ["React.js", "TypeScript", "Styled Components", "CSS3", "HTML5", "Vite"],
+        "images": [
+          {
+            "url": "https://github.com/jfdsn/ee-talent-simulator/blob/main/public/talent-simulator.webp?raw=true",
+            "alt": "Simulador de árvore de talentos"
+          }
+        ],
+        "links": {
+          "github": "https://github.com/jfdsn/ee-talent-simulator",
+          "site": "https://ee-tools.pages.dev/talents"
+        }
       }
     ]
 }
