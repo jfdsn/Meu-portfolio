@@ -12,10 +12,10 @@
       },
       "skills": {
         "frontend": ["HTML5", "CSS3", "Sass", "JavaScript", "TypeScript", "React", "Vue", "Next", "Styled Components"],
-        "backend": ["Node", "Express", "PostgreSQL", "MySQL", "TypeORM", "JWT", "bcrypt"],
+        "backend": ["Node", "Express", "PostgreSQL", "MySQL", "TypeORM", "JWT", "bcrypt", "PHP"],
         "testing": ["Jest", "React Testing Library"],
         "devops": ["Docker", "Git", "Github", "CI/CD"],
-        "outros": ["API RESTful", "Integração de APIs", "Windows", "Linux"]
+        "outros": ["API RESTful", "Integração de APIs", "Windows", "Linux", "Apache"]
       },
       "learning": {
         "current": ["GraphQL", "MongoDB", "AWS"],
@@ -35,6 +35,45 @@
     "projects": [
       {
         "id": "1",
+        "type": "fullstack",
+        "name": "Eden Reforged Website",
+        "short_description": "Site oficial do servidor privado Eden Reforged, do MMORPG Eden Eternal, com backend em PHP e frontend em JavaScript.",
+        "full_description": "Desenvolvi o site oficial do servidor privado Eden Reforged, do MMORPG Eden Eternal. O projeto envolve um backend em PHP e um frontend em JavaScript, integrando diversas funcionalidades voltadas à comunidade do jogo, como notícias, eventos, guias, registro de contas e painel do usuário. Além disso, inclui um painel administrativo completo para gestão de conteúdo, contas e estatísticas do servidor.",
+        "functionality": "O site oferece seções dinâmicas de notícias, eventos e guias, além de permitir a criação de contas e o acesso a um painel personalizado para cada jogador. No backend, implementei sistemas de autenticação, envio de e-mails, gerenciamento de conteúdo e integração com o banco de dados do servidor do jogo. Também criei uma área administrativa voltada para a equipe de staff, com ferramentas de publicação e monitoramento de dados do servidor.",
+        "challenges": "O principal desafio foi dar continuidade a um projeto legado desorganizado que já estava em produção, equilibrando refatoração, manutenção e novas implementações sem interromper o serviço. Outro ponto crítico foi garantir a segurança nas operações de login e integração com o banco de dados do jogo, além de otimizar a estrutura para suportar futuras expansões, como estatísticas em tempo real e sistemas de votação.",
+        "technologies": ["PHP", "JavaScript", "HTML", "CSS", "PostgreSQL", "Apache"],
+        "images": [
+          {
+            "url": "/Imgs/er-site1.webp",
+            "alt": "Página inicial do Eden Reforged Website"
+          },
+          {
+            "url": "/Imgs/er-site3.webp",
+            "alt": "Página login do Eden Reforged Website"
+          },
+          {
+            "url": "/Imgs/er-site4.webp",
+            "alt": "Painel do usuário do Eden Reforged Website"
+          },
+          {
+            "url": "/Imgs/er-site5.webp",
+            "alt": "Painel ferramentas do Eden Reforged Website"
+          },
+          {
+            "url": "/Imgs/er-site6.webp",
+            "alt": "Painel administrativo do Eden Reforged Website"
+          },
+          {
+            "url": "/Imgs/er-site7.webp",
+            "alt": "Página vote store do Eden Reforged Website"
+          }
+        ],
+        "links": {
+          "website": "https://edenreforged.com"
+        }
+      },
+      {
+        "id": "2",
         "type": "fullstack",
         "name": "Fastaxi",
         "short_description": "Aplicativo de simulação de corridas estilo táxi, com backend em Node.js e frontend em React.",
@@ -57,7 +96,7 @@
         }
       },
       {
-        "id": "2",
+        "id": "3",
         "type": "frontend",
         "name": "FocuStation",
         "short_description": "Aplicativo de produtividade com timer Pomodoro e gerenciamento de tarefas",
@@ -81,7 +120,7 @@
         }
       },
       {
-        "id": "3",
+        "id": "4",
         "type": "frontend",
         "name": "NG.Cash Site",
         "short_description": "Interface para sistema de transferências financeiras",
@@ -112,7 +151,7 @@
         }
       },
       {
-        "id": "4",
+        "id": "5",
         "type": "backend",
         "name": "NG.Cash API",
         "short_description": "API para sistema de transferências financeiras",
@@ -126,7 +165,7 @@
         }
       },
       {
-        "id": "5",
+        "id": "6",
         "type": "frontend",
         "name": "Portfolio Pessoal",
         "short_description": "Site de portfólio desenvolvido com Next.js",
@@ -154,7 +193,7 @@
         }
       },
       {
-        "id": "6",
+        "id": "7",
         "type": "frontend",
         "name": "Vocabys",
         "short_description": "Um aplicativo moderno de vocabulário para aprendizado de idiomas com integração com IA generativa.",
@@ -181,7 +220,7 @@
         }
       },
       {
-        "id": "7",
+        "id": "8",
         "type": "frontend",
         "name": "Eden Eternal Tools",
         "short_description": "Site de ferramentas para o jogo Eden Eternal desenvolvido em React.",

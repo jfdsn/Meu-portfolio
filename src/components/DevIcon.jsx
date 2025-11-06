@@ -24,6 +24,8 @@ const skillIcons = {
     "Integração de APIs": 'link',
     "Windows": 'windows8',
     "Linux": 'linux',
+    "PHP": 'php',
+    "Apache": 'apache',
 };
 
 export const DevIcon = ({skill}) => {
