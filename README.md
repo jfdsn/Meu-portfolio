@@ -2,8 +2,8 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/npm-v9.5.1-blue">
-    <img src= "https://img.shields.io/badge/Next-v13.2.4-blue">
-    <img src= "https://img.shields.io/badge/React-v18.2.0-blue">
+    <img src= "https://img.shields.io/badge/Next-v16.0.7-blue">
+    <img src= "https://img.shields.io/badge/React-v19.2.1-blue">
 </p>
 
 ## Descrição

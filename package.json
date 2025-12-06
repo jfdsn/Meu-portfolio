@@ -13,10 +13,10 @@
     "embla-carousel-react": "^8.6.0",
     "eslint": "8.56.0",
     "eslint-config-next": "14.2.26",
-    "next": "14.2.26",
+    "next": "^16.0.7",
     "portfolio-site": "file:",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
   },
   "devDependencies": {
     "sass": "^1.60.0"
